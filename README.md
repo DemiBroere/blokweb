@@ -36,8 +36,11 @@ Surface
 <summary>uitwerken voor kick-off werkgroep</summary>
 
 ### Je opdracht:
-https://sarahjmaas.com/
-
+Website ideeën
+ 
+ https://ponderlily.com/
+ https://www.fitforfree.nl/
+ 
 #### Screenshot(s) van de eerste pagina (small screen): 
 hier de naam van de pagina  
 <img src="images/Screenshot_1.png" width="375px" alt="omschrijving van de pagina">
