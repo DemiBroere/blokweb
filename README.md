@@ -40,6 +40,7 @@ Website ideeën
  
  https://ponderlily.com/
  https://www.fitforfree.nl/
+ https://www.kawaiibox.com/
  
 #### Screenshot(s) van de eerste pagina (small screen): 
 hier de naam van de pagina  
