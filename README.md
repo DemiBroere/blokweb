@@ -35,11 +35,7 @@ Surface
 <details open>
 <summary>uitwerken voor kick-off werkgroep</summary>
 
-### Je opdracht:
-Website ideeën
- 
- https://ponderlily.com/
- https://www.fitforfree.nl/
+### Je opdracht: 
  https://www.kawaiibox.com/
  
 #### Screenshot(s) van de eerste pagina (small screen): 
