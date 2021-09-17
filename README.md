@@ -58,13 +58,10 @@ hier de naam van de pagina
 <summary>uitwerken na afloop 2e werkgroep</summary>
 
 ### de hele pagina: 
-<img src="images/dummy-plaatje.jpg" width="375px" alt="breakdown van de hele pagina">
+<img src="images/breakdown-schets.png" width="375px" alt="breakdown van de hele pagina">
 
 ### dynamisch deel (bijv menu): 
-<img src="images/dummy-plaatje.jpg" width="375px" alt="breakdown van een dynamisch deel">
-
-### wellicht nog een dynamisch deel (bijv filter): 
-<img src="images/dummy-plaatje.jpg" width="375px" alt="breakdown van nog een dynamisch deel">
+<img src="images/dynamic-sketch.png" width="375px" alt="breakdown van een dynamisch deel">
 
 </details>
 
@@ -78,26 +75,14 @@ hier de naam van de pagina
 <summary>uitwerken voor 1e voortgang</summary>
 
 ### Stand van zaken
-hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
-
-
-### Agenda voor meeting
-samen met je groepje opstellen
-
-| student 1      | student 2          | student 3    | student 4        |
-| ---            | ---                | ---          | ---              |
-| dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-| en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-| ...            | ...                | ...          | ...              |
-
+Ik ben deze week druk bezig geweest met het opzetten van de html en langzaam aan begonnen met het toevoegen van de CSS. Het was erg lastig om er mee te beginnen, omdat het alweer een tijdje geleden was dat ik code heb aangeraakt. Ik vond het dan in het begin ook wel erg overweldigend, maar eenmaal bezig ging het eigenlijk wel goed. Dat we nu weer tijd hebben om in het klaslokaal aan de slag te gaan heeft mij erg goed geholpen, omdat ik het makkelijker vind om hulp te vragen in de klas dan via online. 
+ 
+Er was een ding waar ik een beetje tegenaan liep en dat was het onderstaande. In de officiële website is dit een slider met buttons, maar ik heb er een slider van gemaakt met scroll. Ik hoop een carousel nog toe te voegen bij een ander deel van de website, zodat ik die er toch in verwerkt heb. 
+ <img src="images/lastig.png" width="375px" alt="breakdown van een dynamisch deel">
 
 ### Verslag van meeting
-hier na afloop snel de uitkomsten van de meeting vastleggen
-
-- punt 1
-- punt 2
-- nog een punt
-- ...
+ 
+De meeting ging eigenlijk prima, ik vond het wel fijn om weer even bezig te zijn. Ik had niet veel vragen, omdat ik nog niet heel ver was. De enige vraag die ik had was of het nodig was om elke keer de code te moeten herhalen, maar dat was (gelukkig) niet het geval. Anders had ik dat nog moeten aanpassen. De studentassistenten hadden mij een goede tip gegeven om aan de slag te gaan met de carousel. 
 
 </details>
 
