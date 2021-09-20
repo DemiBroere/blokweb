@@ -12,9 +12,6 @@
 /**************/
 
 
-
-
-
 :root {
 
     /* Body */
@@ -54,6 +51,36 @@ body {
   
 }
 
+/* Changes the colors of the selected area. */
+
+::selection {
+  color: rgb(255, 255, 255);
+  background-color: rgb(255, 80, 153);
+}
+
+/* width of the scrollbar (vertical & horizontal) */
+::-webkit-scrollbar {
+  width: 0.5em;
+  height: 0.5em;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background:  var(--accent-2);
+
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(255, 80, 153);
+}
+
+
 button {
   background-color: #ff93c9;
   color: #fff;
@@ -73,24 +100,30 @@ button:hover {
   box-shadow: var(--shadow);
 }
 
-
-
-
-
-
 /**************/
-/* Header & nav */
+/* Navigation
 /**************/
 
-
-
-
-
-header {
-  padding: 0 15px;
-  margin-left: auto;
-  margin-right: auto;
+#bars, .menu {
+  color: #8669ab;
+  text-transform: uppercase;
+  font-weight: bolder;
 }
+
+#bars { 
+  padding: 1em;
+  margin-left: 1em;
+}
+
+.menu {
+  font-family: "Quicksand";
+}
+
+
+/**************/
+/* Sections
+/**************/
+
 
 
 section {
@@ -100,10 +133,6 @@ section {
   overflow: hidden;
   padding: 2em;
 }
-
-
-
-
 
 
 /**************/
@@ -119,8 +148,9 @@ section:first-of-type {
 }
 
 section:first-of-type img {
-  max-width: 100%;
+  max-width: 150%;
   height: auto;
+  margin-top: -2em;
 }
 
 section:first-of-type button {
@@ -212,6 +242,12 @@ section:nth-of-type(3) {
   align-items: center;
 }
 
+section:nth-of-type(3) img {
+  max-width: 150%;
+  height: auto;
+  margin-top: -3em;
+}
+
 section:nth-of-type(3) h3 {
   font-family: var( --header-font);
   color: var(--accent-2);
@@ -219,7 +255,6 @@ section:nth-of-type(3) h3 {
   align-items: center;
   
 }
-
 
 .feature-icon {
   position: relative;
@@ -245,7 +280,7 @@ section:nth-of-type(3) h3 {
 
 
 /**************/
-/* Section 4 */
+/* Section 4 grid */
 /**************/
 
 
@@ -283,6 +318,7 @@ section:nth-of-type(4) h2 {
 .grid { 
   display: flex;
   flex-direction: column;
+  margin-top: 1em;
   margin-left: -2em;
   margin-right: -2em;
 }
@@ -294,6 +330,59 @@ section:nth-of-type(4) h2 {
   padding: 0.25em 0 0.25em 0;
 }
 
+.grid-item-1 {
+  position: relative;
+  overflow: hidden;
+}
+
+.grid-item-1 img {
+  transition: .5s ease;
+}
+
+.overlay {
+  background: rgba(182, 182, 233, 0.9);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  color: #fff;
+  opacity: 0;
+  transition: .5s ease;
+}
+
+.content {
+  width:100%;
+  position: absolute;
+  color: var(--accent-color);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.grid-item-1:hover .overlay {
+  overflow: hidden;
+  opacity: 1;
+}
+
+.grid-item-1:hover img {
+  transform: scale(1.25);
+}
+
+.hoverbutton {
+  background-color: transparent;
+  font-size: 0.75em;
+  padding: 0.5em;
+  border: 0.15em solid #fff;
+  border-radius: 0.5em;
+}
+
+.hoverbutton a {
+  background-color: transparent;
+  color: var(--accent-color);
+  text-decoration: none;
+}
 
 /**************/
 /* Section 5 */
@@ -425,6 +514,3 @@ footer button {
 footer button:hover {
   background-color: #caedff;
 }
-
-
-

@@ -18,19 +18,27 @@
     <link href="https://fonts.googleapis.com/css2?family=Kanit" rel="stylesheet">
     
 
-    <script src='script.js'></script>
+    <script src='scripts\script.js'></script>
 </head>
 <body>
     
     <header>
+        
         <img src="images\Kawaii-Box-logo.png" id="logo" alt="Kawaii Box logo" />
-			<nav><i class="fa fa-bars" aria-hidden="true"></i> Menu<ul>
-				<li><a href="">Subscribe</a></li>
-				<li><a href="">What's in my box</a></li>
-				<li><a href="">As seen on TV</a></li>
-				<li><a href="">About</a></li>
-			</ul>
-			</nav>
+           
+
+        <nav>
+            <i class="fa fa-bars" aria-hidden="true" id="bars"> <span class="menu">Menu</span></i>
+
+            <ul>
+                <li><a href="">Subscribe</a></li>
+                <li><a href="">What's in my box</a></li>
+                <li><a href="">As seen on TV</a></li>
+                <li><a href="">About</a></li>
+            </ul>
+        </nav>
+
+
     </header>
 
     <main>
@@ -112,7 +120,18 @@
                 </div>
 
                 <div class="grid">
-                    <a href=""> <img src="images\kawaii-plushies-2.jpg" alt="Kawaii plushies" > </a>
+                    <div class="grid-item-1">
+                            <img src="images\kawaii-plushies-2.jpg" alt="Kawaii plushies">
+                            <div class="overlay">
+                                <div class="content">
+                                    <h3>Kawaii Plushies </h3>
+                                    <p>Super cute stuffed animals & kawaii plushies. Perfectly soft and huggable!</p>
+                                    <a href=""><button class="hoverbutton">see more</button></a>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
 					<a href=""> <img src="images\kawaii-accessories-5.jpg" alt="Kawaii accessoires" > </a>
 					<a href=""> <img src="images\kawaii-squishies-toys-4.jpg" alt="Kawaii Squishies" > </a>
 					<a href=""> <img src="images\kawaii-stationery-2.jpg" alt="kawaii stationery" > </a>
@@ -159,7 +178,7 @@
 							<button type="button" id="slick-slide-control00" ></button>
 						</li>
 						<l">
-							<button type="button"" id="slick-slide-control01" ></button>
+							<button type="button" id="slick-slide-control01" ></button>
 						</li>
 						<li>
 							<button type="button" id="slick-slide-control02" ></button>
@@ -227,11 +246,11 @@
                 <p>Invite friends to enjoy their own Kawaii Box and earn free boxes!</p>
                 <button>Get started</button>
 
-                <div class="privacy policy">
-                    <p>Kawaii Box™ is a member of Kawaii Group © 2021 All Rights Reserved</p> - 
-                    <a href="https://www.kawaiibox.com/terms-of-service/">Privacy Policy</a>
-                    <a href="https://www.kawaiibox.com/privacy-policy/">Terms & Conditions</a>
-                </div>
+            <div class="privacy policy">
+                <p>Kawaii Box™ is a member of Kawaii Group © 2021 All Rights Reserved</p> - 
+                <a href="https://www.kawaiibox.com/terms-of-service/">Privacy Policy</a>
+                <a href="https://www.kawaiibox.com/privacy-policy/">Terms & Conditions</a>
+            </div>
     </footer>
 
 </body>
