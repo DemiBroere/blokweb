@@ -340,7 +340,7 @@ section:nth-of-type(4) h2 {
 }
 
 .overlay {
-  background: rgba(182, 182, 233, 0.9);
+  background: rgba(255, 116, 174, 0.9);
   position: absolute;
   top: 0;
   bottom: 0;
