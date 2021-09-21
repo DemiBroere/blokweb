@@ -341,7 +341,6 @@ section:nth-of-type(4) h2 {
 
 /* Grid met img hover */
 
-
 .grid { 
   display: flex;
   flex-direction: column;
@@ -357,12 +356,12 @@ section:nth-of-type(4) h2 {
   padding: 0.25em 0 0.25em 0;
 }
 
-.grid-item-1 {
+.grid-item {
   position: relative;
   overflow: hidden;
 }
 
-.grid-item-1 img {
+.grid-item img {
   transition: .5s ease;
 }
 
@@ -384,16 +383,17 @@ section:nth-of-type(4) h2 {
   color: var(--accent-color);
   top: 50%;
   left: 50%;
+  padding: 1em;
   transform: translate(-50%, -50%);
   text-align: center;
 }
 
-.grid-item-1:hover .overlay {
+.grid-item:hover .overlay {
   overflow: hidden;
   opacity: 1;
 }
 
-.grid-item-1:hover img {
+.grid-item:hover img {
   transform: scale(1.25);
 }
 
