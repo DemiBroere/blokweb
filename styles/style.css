@@ -35,22 +35,6 @@
  
 }
 
-/**************/
-/* Basis */
-/**************/
-
-
-body {
-  background: #fff;
-  color: #666;
-  font-family: 'Quicksand', sans-serif;
-  font-weight: 400;
-  font-size: 1em;
-  line-height: 1.25em;
-  margin: 0;
-  
-}
-
 /* Changes the colors of the selected area. */
 
 ::selection {
@@ -80,6 +64,22 @@ body {
   background: rgb(255, 80, 153);
 }
 
+/**************/
+/* Basis */
+/**************/
+
+
+body {
+  background: #fff;
+  color: #666;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 400;
+  font-size: 1em;
+  line-height: 1.25em;
+  margin: 0;
+  padding: 0;
+  
+}
 
 button {
   background-color: #ff93c9;
@@ -88,6 +88,7 @@ button {
   text-transform: uppercase;
   font-weight: bold;
   letter-spacing: 0.15em;
+  margin-bottom: 2em;
   padding: 0.5em 1em 0.5em 1em;
   border: 0.05em solid #ff93c9;
   border-radius: 0.5em;
@@ -99,6 +100,19 @@ button:hover {
   border-color: #ffb8dc;
   box-shadow: var(--shadow);
 }
+
+p {
+  margin-top: -0.5em;
+}
+
+a {
+  text-decoration: none;
+}
+
+h2 {
+  font-size: 2em;
+}
+
 
 /**************/
 /* Navigation
@@ -172,6 +186,7 @@ section:first-of-type > h2 {
   color: var(--accent-color);
   font-weight:bolder;
   text-shadow: var(--shadow);
+  margin-top: -0.5em;
 }
 
 section:first-of-type > h3 {
@@ -180,6 +195,7 @@ section:first-of-type > h3 {
   color: var(--accent-color);
   font-weight:bolder;
   text-shadow: var(--shadow);
+  margin-top: -0.25em;
 }
 
 
@@ -195,6 +211,7 @@ section:nth-of-type(2) {
   background-color: var(--background-color);
   text-align: center;
   align-items: center;
+  
 }
 
 section:nth-of-type(2) h1 {
@@ -202,8 +219,13 @@ section:nth-of-type(2) h1 {
   color: var(--accent-2);
   text-align: center;
   align-items: center;
-  
 }
+
+
+section:nth-of-type(2) img {
+  margin: 1em;
+}
+
 
 .reviewicon {
   border: 0.1em solid #fff;
@@ -298,6 +320,8 @@ section:nth-of-type(4) h2 {
   
 }
 
+/* Item slider */
+
 .items-slide {
   display: flex;
   overflow-x: auto;
@@ -314,6 +338,9 @@ section:nth-of-type(4) h2 {
 .items-slide img {
   width: 50%;
 }
+
+/* Grid met img hover */
+
 
 .grid { 
   display: flex;
@@ -384,13 +411,14 @@ section:nth-of-type(4) h2 {
   text-decoration: none;
 }
 
+
 /**************/
-/* Section 5 */
+/* Section 5 Carousel */
 /**************/
 
 
 section:nth-of-type(5) {
-  background-color: var(--background-color);
+  background-color: var(--fourth-background);
   text-align: center;
   align-items: center;
 }
@@ -399,15 +427,33 @@ section:nth-of-type(5) h2 {
   font-family: var( --header-font);
   color: var(--accent-2);
   text-align: center;
-  align-items: center;
-  
+  align-items: center;  
 }
+
+.pastcontainer {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.pastitem {
+  background: #fff;
+  overflow: hidden;
+  text-align: center;
+  margin-bottom: 1em;
+  max-width: 300px;
+  border-radius: 8px;
+}
+
+.pastitem img {
+  max-width: 100%;
+}
+
 
 
 /**************/
 /* Section 6 */
 /**************/
-
 
 
 section:nth-of-type(6) {
@@ -424,6 +470,20 @@ section:nth-of-type(6) h2 {
   
 }
 
+section:nth-of-type(6) a {
+  color: var(--main-color);  
+}
+
+section:nth-of-type(6) img {
+  margin: 1em; 
+}
+
+
+
+
+
+
+
 
 /**************/
 /* Section 7 */
@@ -432,14 +492,16 @@ section:nth-of-type(6) h2 {
 
 
 section:nth-of-type(7) {
-  background-color: var(--background-color);
+  background-image: url(https://s14823.pcdn.co/wp-content/uploads/2018/03/choose-your-plan-pattern-1b.png);
+  background-color: #ffb5d8;
+  color: var(--accent-color);
   text-align: center;
   align-items: center;
 }
 
 section:nth-of-type(7) h2 {
   font-family: var( --header-font);
-  color: var(--accent-2);
+  color: var(--accent-color);
   text-align: center;
   align-items: center;
   
@@ -447,8 +509,14 @@ section:nth-of-type(7) h2 {
 
 
 
+
+
+
+
+
+
 /**************/
-/* Section 8 */
+/* Section 8 The community */
 /**************/
 
 section:nth-of-type(8) {
@@ -467,9 +535,16 @@ section:nth-of-type(8) h2 {
 
 
 
+
+
+
+
+
+
 /**************/
-/* Section 9 */
+/* Section 9 footer */
 /**************/
+
 
 
 footer {
@@ -494,8 +569,25 @@ footer h5 {
   
 }
 
-footer p {
-  font-size: 0.8em;  
+footer p { /* Changes the size of the footer's paragraph */
+  font-size: 0.9em;  
+  color: #fff;
+}
+
+footer .copyright {
+  padding-top: 0 !important;
+  text-align: left !important;
+}
+
+footer .site-info {
+  color: #fff;
+  font-size: 0.8em;
+  text-transform: none;
+}
+
+footer .site-info a {
+  text-decoration: none;
+  color: #fff;
 }
 
 footer .fa {
@@ -504,13 +596,46 @@ footer .fa {
   letter-spacing: 1em;
 }
 
-footer button {
+/* Footer button */
+
+footer .started {
   background-color: var(--button-background2);
   border: 0.5em solid var(--button-background2);
   text-align: center;
   align-items: center;
 }
 
-footer button:hover {
+footer .started:hover {
   background-color: #caedff;
+}
+
+
+
+
+/**************/
+/* Forms */
+/**************/
+
+form {
+  display: flex;
+  position: relative;
+  flex-direction:row;
+}
+
+footer input {
+  flex-grow: 1;
+  height: 2.5em;
+  padding: 1em;
+  border: none;
+  border-radius: 0.25em;
+}
+
+footer .news-submit .fa {
+  position: absolute;
+  color:rgb(255, 80, 153);
+}
+
+.news-submit:hover {
+  background: none;
+
 }
