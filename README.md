@@ -96,8 +96,11 @@ De meeting ging eigenlijk prima, ik vond het wel fijn om weer even bezig te zijn
 <summary>uitwerken voor 2e voortgang</summary>
 
 ### Stand van zaken
-hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
-
+ Ik sta er redelijk goed voor, ik ben goed bezig geweest met de eerste pagina en als deze af is kan ik makkelijker door naar de tweede pagina, omdat dan alles al goed staat. Wat ik erg lastig vind om te doen is de carousel, maar daar heb ik ook nog niet echt naar gekeken. Hier en daar heb ik geprobeerd verschillende delen al wat responsive te maken, omdat ik dat leuk vond om te doen en omdat ik het af en toe vervelend vind om maar met één ding bezig te zijn ( in dit geval de surface plane ). Al met al vind ik dat ik goed op weg ben.
+ 
+Eindelijk had ik de form goed gekregen. 
+ 
+<img src="images/screenshot-3.png" width="375px" alt="form deel">
 
 ### Agenda voor meeting
 samen met je groepje opstellen
