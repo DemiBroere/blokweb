@@ -810,35 +810,33 @@ footer .started:hover {
 /**************/
 
 form {
-  width: 100%;
   display: flex;
   position: relative;
+  padding-bottom: 1em;
 }
 
 footer input#email {
-
-  flex-grow: 3;
+  width: 100%;
   height: 2.5em;
-  padding: 1em;
   border: none;
   border-radius: 0.25em;
 }
 
-footer .news-submit .fa {
-  display: inline-block;
+button.news-submit {
+  display: inline-block;  
+  width: 50px;
+  height: 2.5em;
   position: absolute;
+  cursor: pointer;
   color:rgb(255, 80, 153);
-  left: 100px;
+  right: 0;
 }
 
-footer button  {
-  background-color: none;
-  box-shadow: none;
-  border: none;
-  transition: none;
+footer .news-submit .fa {
+  color:rgb(255, 80, 153);
 }
 
-footer button:hover {
+footer button, button:hover {
   background: none;
   box-shadow: none;
   border: none;
