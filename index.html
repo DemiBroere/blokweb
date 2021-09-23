@@ -11,35 +11,43 @@
 	<link rel="icon" type="image/png" sizes="32x32" href="images\favicon-16x16.png">
 	<link rel="icon" type="image/png" sizes="16x16" href="images\favicon-16x16.png">
 
-    <link rel='stylesheet' type='text/css' media='screen' href='styles\style.css'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     
     <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Quicksand'>
     <link href="https://fonts.googleapis.com/css2?family=Kanit" rel="stylesheet">
     
+    <link rel='stylesheet' type='text/css' media='screen' href='styles\style.css'>
 
-    <script src='scripts\script.js'></script>
 </head>
 <body>
     
     <header>
-        
         <img src="images\Kawaii-Box-logo.png" id="logo" alt="Kawaii Box logo" />
-           
-
-        <nav>
-            <i class="fa fa-bars" aria-hidden="true" id="bars"> <span class="menu">Menu</span></i>
-
-            <ul>
-                <li><a href="">Subscribe</a></li>
-                <li><a href="">What's in my box</a></li>
-                <li><a href="">As seen on TV</a></li>
-                <li><a href="">About</a></li>
-            </ul>
-        </nav>
-
-
     </header>
+    
+    <nav id="desktop">
+        <i class="fa fa-bars" aria-hidden="true" id="bars"> <span class="menu">Menu</span></i>
+
+        <ul>
+            <li><a href="">Subscribe</a></li>
+            <li><a href="">What's in my box</a></li>
+            <li><a href="">As seen on TV</a></li>
+            <li><a href="">About</a></li>
+        </ul>
+    </nav>
+
+    <nav id="mobile">
+        <button>
+          <i class="fa fa-bars" aria-hidden="true" id="bars"> <span class="menu">Menu</span></i>  
+        </button>
+
+        <ul>
+            <li><a href="">Subscribe</a></li>
+            <li><a href="">What's in my box</a></li>
+            <li><a href="">As seen on TV</a></li>
+            <li><a href="">About</a></li>
+        </ul>
+    </nav>
 
     <main>
 
@@ -143,7 +151,6 @@
                             </div>
                         </div>
 
-                        
                      <div class="grid-item">
                         <a href=""> <img src="images\kawaii-squishies-toys-4.jpg" alt="Kawaii Squishies" > </a>
                         <div class="overlay">
@@ -286,19 +293,15 @@
                 <button class="news-submit" type="submit" name="submit"><i class="fa fa-arrow-right"></i></button>
             </form>
 
-            <div class="news">
             <p>Join our newsletter and receive the latest kawaii news and deals!</p>
 				<a href="" rel="nofollow" target="_blank"><i class="fa fa-facebook"></i></a>
 				<a href="" rel="nofollow" target="_blank"><i class="fa fa-twitter"></i></a>
 				<a href="" rel="nofollow" target="_blank"><i class="fa fa-instagram"></i></a>
 				<a href="" rel="nofollow" target="_blank"><i class="fa fa-youtube"></i></a>
-			</div>
             
-            <div class="freebox">
                 <h5>Get a free box!</h5>
                 <p>Invite friends to enjoy their own Kawaii Box and earn free boxes!</p>
                 <button class="started">Get started</button>
-            </div>
 
 
             <div class="copyright site-info">
@@ -309,6 +312,8 @@
                 <a href="https://www.kawaiibox.com/terms-of-service/">Terms & Conditions</a>                    
             </div>
     </footer>
+
+    <script src='scripts\script.js'></script>
 
 </body>
 </html>

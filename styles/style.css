@@ -113,26 +113,132 @@ h2 {
   font-size: 2em;
 }
 
+ul, li, a {
+  text-decoration: none;
+  list-style-type: none;
+}
+
 
 /**************/
 /* Navigation
 /**************/
 
-#bars, .menu {
-  color: #8669ab;
-  text-transform: uppercase;
-  font-weight: bolder;
+header {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 25vh;
 }
 
-#bars { 
-  padding: 1em;
-  margin-left: 1em;
+@media screen and (min-width: 600px) {
+
+  nav {
+    position: sticky;
+    top: 0;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    color: #8669ab;
+    z-index: 9999;
+  }
+  
+  ul {
+    background-color:#fff;
+    overflow: auto;
+  }
+  
+  li {
+    display: inline-block;
+    padding: 1em;
+    list-style-type: none;
+  }
+  
+
+  #mobile {
+    display: none;
+  }
+  
+  #bars {
+  display:none;
+  }
 }
 
-.menu {
-  font-family: "Quicksand";
-}
+@media only screen and (max-width: 600px) {
 
+  #desktop {
+    display: none;
+  }
+
+  #mobile button {
+    background:none;
+    border: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  #mobile button:hover {
+    box-shadow: none;
+    cursor: pointer;
+  }
+
+  #mobile {
+    background-color: white;
+    position: sticky;
+    top: 0;
+    font-weight: 700;
+    text-transform: uppercase;
+    z-index: 99;
+  }
+
+  #mobile ul {
+    background-color: white;
+    display: inline-flex;
+    flex-direction: column;
+    position: absolute;
+    top: 30px;
+    left:10px;
+    width: 90%;
+    
+    border: 1px solid #ff7abc;
+
+    z-index: 99;
+    opacity: 0;
+
+    transition: all 0.6s;
+    transition-delay: 0.1s;
+    transform: translateX(-30em);
+
+  }
+
+ #mobile ul.terug {
+  transform: translateX(0);
+  transition:0.5s;
+  opacity: 1;
+ }
+
+  #mobile li {
+    margin: 10px;
+  }
+
+
+  #bars, .menu {
+    color: #8669ab;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: bolder;
+  }
+
+  #bars { 
+    padding: 1em;
+    margin-left: 1em;
+  }
+
+  .menu {
+    font-family: "Quicksand";
+  }
+
+}
 
 /**************/
 /* Sections
@@ -147,6 +253,7 @@ section {
   overflow: hidden;
   padding: 2em;
 }
+
 
 
 /**************/
@@ -175,6 +282,8 @@ section:first-of-type button {
 section:first-of-type > h1 {
   font-family: var(--header-font);
   font-size: 2em;
+  line-height: 0.75em;
+  text-transform: uppercase;
   color: var(--accent-color);
   font-weight:bolder;
   text-shadow: var(--shadow);
@@ -342,21 +451,24 @@ section:nth-of-type(4) h2 {
 /* Grid met img hover */
 
 .grid { 
+  position: relative;
   display: flex;
   flex-direction: column;
   margin-top: 1em;
-  margin-left: -2em;
-  margin-right: -2em;
+  margin-left: -3em;
+  margin-right: -3em;
 }
 
 .grid-item {
   position: relative;
   overflow: hidden;
-  margin-bottom: 1em;
+  margin: 1em;
 }
 
 .grid-item img {
-  transition: .5s ease;
+	vertical-align: top;
+	max-width: 100%;
+	transition: all 0.3s;
 }
 
 .grid-item:hover img {
@@ -375,12 +487,10 @@ section:nth-of-type(4) h2 {
   transition: .5s ease;
 }
 
-
 .grid-item:hover .overlay {
   overflow: hidden;
   opacity: 1;
 }
-
 
 .content {
   width:100%;
@@ -407,6 +517,76 @@ section:nth-of-type(4) h2 {
   text-decoration: none;
 }
 
+@media only screen and (max-width: 600px) {
+  .grid { 
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-left: -3em;
+    margin-right: -3em;
+  }
+
+  .grid-item {
+    position: relative;
+    overflow: hidden;
+    margin: 1em;
+  }
+
+  .grid-item img {
+    vertical-align: top;
+    max-width: 100%;
+    -moz-transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+
+  .grid-item:hover img {
+    transform: scale(1.1);
+  }
+
+  .overlay {
+    background: rgba(255, 116, 174, 0.9);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    color: #fff;
+    opacity: 0;
+    transition: .5s ease;
+  }
+
+
+  .grid-item:hover .overlay {
+    overflow: hidden;
+    opacity: 1;
+  }
+
+  .content {
+    width:100%;
+    position: absolute;
+    color: var(--accent-color);
+    top: 50%;
+    left: 50%;
+    padding: 1em;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+  .hoverbutton {
+    background-color: transparent;
+    font-size: 0.75em;
+    padding: 0.5em;
+    border: 0.15em solid #fff;
+    border-radius: 0.5em;
+  }
+
+  .hoverbutton a {
+    background-color: transparent;
+    color: var(--accent-color);
+    text-decoration: none;
+  }
+}
 
 /**************/
 /* Section 5 Carousel */
@@ -488,7 +668,7 @@ section:nth-of-type(6) img {
 
 
 section:nth-of-type(7) {
-  background-image: url(https://s14823.pcdn.co/wp-content/uploads/2018/03/choose-your-plan-pattern-1b.png);
+  background-image: url("../images/planbg.png");
   background-color: #ffb5d8;
   color: var(--accent-color);
   text-align: center;
@@ -570,6 +750,22 @@ footer p { /* Changes the size of the footer's paragraph */
   color: #fff;
 }
 
+footer a { 
+  font-size: 0.9em;  
+  color: #fff;
+}
+
+
+footer ul { 
+  display: flex;
+  flex-direction: column;
+  background-color: #ff93c9;
+  columns: 1;
+  line-height: 0;
+  color: #fff;
+}
+
+
 footer .copyright {
   padding-top: 0 !important;
   text-align: left !important;
@@ -595,8 +791,9 @@ footer .fa {
 /* Footer button */
 
 footer .started {
+  width: 100%;
   background-color: var(--button-background2);
-  border: 0.5em solid var(--button-background2);
+  padding: 1em;
   text-align: center;
   align-items: center;
 }
@@ -613,13 +810,14 @@ footer .started:hover {
 /**************/
 
 form {
+  width: 100%;
   display: flex;
   position: relative;
-  flex-direction:row;
 }
 
-footer input {
-  flex-grow: 1;
+footer input#email {
+
+  flex-grow: 3;
   height: 2.5em;
   padding: 1em;
   border: none;
@@ -627,11 +825,22 @@ footer input {
 }
 
 footer .news-submit .fa {
+  display: inline-block;
   position: absolute;
   color:rgb(255, 80, 153);
+  left: 100px;
 }
 
-.news-submit:hover {
-  background: none;
+footer button  {
+  background-color: none;
+  box-shadow: none;
+  border: none;
+  transition: none;
+}
 
+footer button:hover {
+  background: none;
+  box-shadow: none;
+  border: none;
+  transition: none;
 }
