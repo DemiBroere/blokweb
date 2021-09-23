@@ -100,7 +100,7 @@ De meeting ging eigenlijk prima, ik vond het wel fijn om weer even bezig te zijn
  
 Eindelijk had ik de form goed gekregen. 
  
-<img src="images/screenshot-3.png" width="375px" alt="form deel">
+<img src="images/screenshot_3.png" width="375px" alt="form deel">
 
 ### Agenda voor meeting
 samen met je groepje opstellen
