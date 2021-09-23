@@ -154,35 +154,26 @@ header {
     list-style-type: none;
   }
   
-
-  #mobile {
-    display: none;
-  }
-  
   #bars {
   display:none;
   }
 }
 
-@media only screen and (max-width: 600px) {
-
-  #desktop {
-    display: none;
-  }
-
-  #mobile button {
+  nav button {
     background:none;
     border: none;
     padding: 0;
     margin: 0;
   }
 
-  #mobile button:hover {
+  nav button:hover {
+    background:none;
+    border: none;
     box-shadow: none;
     cursor: pointer;
   }
 
-  #mobile {
+  nav  {
     background-color: white;
     position: sticky;
     top: 0;
@@ -191,7 +182,7 @@ header {
     z-index: 99;
   }
 
-  #mobile ul {
+  nav ul {
     background-color: white;
     display: inline-flex;
     flex-direction: column;
@@ -211,13 +202,13 @@ header {
 
   }
 
- #mobile ul.terug {
+  nav ul.terug {
   transform: translateX(0);
   transition:0.5s;
   opacity: 1;
  }
 
-  #mobile li {
+ nav li {
     margin: 10px;
   }
 
@@ -237,8 +228,6 @@ header {
   .menu {
     font-family: "Quicksand";
   }
-
-}
 
 /**************/
 /* Sections
