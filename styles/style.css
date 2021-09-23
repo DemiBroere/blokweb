@@ -721,8 +721,6 @@ section:nth-of-type(8) h2 {
 /* Section 9 footer */
 /**************/
 
-
-
 footer {
   background-color: #ff93c9;
   color: var(--accent-color);
@@ -741,7 +739,6 @@ footer h5 {
   font-size: 1.1em;
   font-family: var( --header-font);
   color: var(--accent-color);
-  align-items: center;
   
 }
 
@@ -750,25 +747,35 @@ footer p { /* Changes the size of the footer's paragraph */
   color: #fff;
 }
 
-footer a { 
-  font-size: 0.9em;  
-  color: #fff;
+footer ul, footer li {
+  margin: 0;
+  padding: 0;
 }
-
 
 footer ul { 
   display: flex;
   flex-direction: column;
   background-color: #ff93c9;
-  columns: 1;
   line-height: 0;
+  color: #fff;
+  
+  
+}
+
+footer li {
+  display: inline-block;
+  line-height: 2em;
+  list-style-type: none;
+}
+
+footer a { 
+  font-size: 0.9em;  
   color: #fff;
 }
 
-
 footer .copyright {
-  padding-top: 0 !important;
-  text-align: left !important;
+  padding-top: 0;
+  text-align: left;
 }
 
 footer .site-info {
@@ -802,9 +809,6 @@ footer .started:hover {
   background-color: #caedff;
 }
 
-
-
-
 /**************/
 /* Forms */
 /**************/
@@ -819,6 +823,7 @@ footer input#email {
   width: 100%;
   height: 2.5em;
   border: none;
+  padding: 0.5em;
   border-radius: 0.25em;
 }
 
@@ -836,7 +841,7 @@ footer .news-submit .fa {
   color:rgb(255, 80, 153);
 }
 
-footer button, button:hover {
+footer button, footer button:hover {
   background: none;
   box-shadow: none;
   border: none;

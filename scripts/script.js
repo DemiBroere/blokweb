@@ -1,8 +1,8 @@
 var menuButton = document.querySelector("#mobile button");
 var menuSee = document.querySelector("#mobile ul");
 
-function menuverschijnt() {
+function toonMenu() {
     menuSee.classList.toggle("terug");
 }
 
-menuButton.addEventListener("click", menuverschijnt);
+menuButton.addEventListener("click", toonMenu);
