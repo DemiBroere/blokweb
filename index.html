@@ -22,31 +22,38 @@
 <body>
     
     <header>
-        <img src="images\Kawaii-Box-logo.png" id="logo" alt="Kawaii Box logo" />
+        <a href="index.html"> <img src="images\Kawaii-Box-logo.png" id="logo" alt="Kawaii Box logo" /></a>
     </header>
     
     <nav>
-        <i class="fa fa-bars" aria-hidden="true" id="bars"> <span class="menu">Menu</span></i>
+        <button>
+          <i class="fa fa-bars" aria-hidden="true" id="bars"> <span class="menu">Menu</span></i>  
+        </button>
 
         <ul>
             <li><a href="">Subscribe</a></li>
             <li><a href="">What's in my box</a></li>
             <li><a href="">As seen on TV</a></li>
-            <li><a href="">About</a></li>
+            <li><a href="about.html">About</a></li>
         </ul>
     </nav>
 
     <main>
 
-        <section>
+        <section id="kawaiify">
             <img src="images\banner.png" alt="banner" />
-                 <h1>Kawaii-fy your life</h1>
-                     <h2>The cutest monthly surprise!</h2>
-                          <h3>Each box is filled with kawaii items. Straight from Japan to your door with Free shipping!</h3>
-                                 <button>Get it now</button>
+            
+            <div class="kawaiifywrapper">
+                <div class="kawaiifycontent">
+                    <h1>Kawaii-fy your life</h1>
+                    <h2>The cutest monthly surprise!</h2>
+                        <h3>Each box is filled with kawaii items. Straight from Japan to your door with Free shipping!</h3>
+                                <button>Get it now</button>
+                </div>
+            </div>
         </section>
 
-        <section>
+        <section id="review">
             <h1>What our subscribers are saying!</h1>
             <p>Our subscribers have rated Kawaii Box  (642 verified reviews).</p>
             
@@ -79,7 +86,7 @@
                 </div>    
         </section>
 
-        <section>
+        <section id="features">
             <img src="images\kb-features-1f.jpg" alt="kawaii box features" />
             
                 <div class="feature-icon"><i class="fa fa-heart" aria-hidden="true"></i></div>
@@ -93,10 +100,9 @@
                 <div class="feature-icon"><i class="fa fa-smile-o" aria-hidden="true"></i></div>
                     <h3>Guaranteed Happiness</h3>
                     <p>These cute things from Japan are guaranteed to put a smile on your face. Month after month!</p>
-
         </section>
 
-        <section>
+        <section id="included">
             <h2>What's in your box?</h2>
              <p>Check out what kind of super cute stuff & authentic kawaii characters we include in each kawaii subscription box!</p>
              
@@ -196,7 +202,7 @@
 
         </section>
 
-        <section>
+        <section id="past">
             <h2>Past boxes</h2>
                 <p>Take a look at what kawaii things have been included in past kawaii subscription boxes!</p>
 
@@ -231,7 +237,7 @@
                 </div>   
         </section>
 
-        <section>
+        <section id="concept">
             <h2>How kawaii box works?</h2>
 
                 <a href=""> <img src="images\how-it-works-1.png" alt="Subscribe" > </a>
@@ -251,16 +257,15 @@
                <p>Experience the cuteness overload!</p>
         </section>
 
-        <section>
+        <section id="plan">
             <h2>Choose your plan</h2>
                 <p>Choose the plan you like the most, place your order, and your first kawaii subscription box will ship soon!</p>
 
-				<div id="monthlyplan">
-					<img src="" alt="Monthly plans"/>
-				</div>
+                <button>See monthly</button>
+
         </section>
 
-        <section>
+        <section id="join">
             <h2>Join the community!</h2>
                  <p>Join the kawaii community! Get a Japanese subscription box and share it using #KawaiiBox!</p>
         </section>
