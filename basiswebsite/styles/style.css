@@ -129,6 +129,7 @@ header {
   align-items: center;
   justify-content: center;
   height: 25vh;
+  margin: 2em 0 2em 0;
 }
 
 /* For desktop */
@@ -267,26 +268,25 @@ section {
 /* Section 1: kawaiify */
 /**************/
 
-
-section:first-of-type {
+#kawaiify {
   background-color: var(--second-background);
   text-align: center;
 }
 
-section:first-of-type img {
+#kawaiify img {
   max-width: 150%;
   height: auto;
   margin-top: -2em;
 }
 
-section:first-of-type button {
+#kawaiify button {
   bottom: 0;
 }
 
 
 .kawaiifycontent h1 {
   font-family: var(--header-font);
-  font-size: 2em;
+  font-size: 3em;
   line-height: 0.75em;
   text-transform: uppercase;
   color: var(--accent-color);
@@ -296,7 +296,7 @@ section:first-of-type button {
 
 .kawaiifycontent h2 {
   font-family: var(--header-font);
-  font-size: 1.5em;
+  font-size: 2em;
   color: var(--accent-color);
   font-weight:bolder;
   text-shadow: var(--shadow);
@@ -305,7 +305,7 @@ section:first-of-type button {
 
 .kawaiifycontent h3 {
   font-family: 'Quicksand', sans-serif;
-  font-size: 1.25em;
+  font-size: 1.5em;
   color: var(--accent-color);
   font-weight:bolder;
   text-shadow: var(--shadow);
@@ -315,26 +315,29 @@ section:first-of-type button {
 
 @media screen and (min-width: 600px) {
 
-  section:first-of-type {
-    display: flex;
-    flex-direction: row;
+  #kawaiify {
     background-image: url("../images/kb-heropic-desktop-1b.jpg");
     background-position: center center;
     background-repeat: no-repeat;
-    padding: 120px 0px 120px 10px;
     text-align: left;
   }
-  
-  section:first-of-type img {
-    width: 100%;
+
+  #kawaiify img {
+    max-width: 100%;
     display: none;
   }
 
-  .kawaiifycontent {
+  .kawaiifywrapper {
     position: relative;
-    width: 100%;
-    margin-left: 400px;
-    max-width: 550px;
+    display: flex;
+    align-items: center;
+    width: 50%;
+    margin: auto auto;
+  }
+
+  .kawaiifycontent {
+    width: 50%;
+    left: 20em;
   }
 }
 
@@ -345,14 +348,14 @@ section:first-of-type button {
 
 
 
-section:nth-of-type(2) {
+#review {
   background-color: var(--background-color);
   text-align: center;
   align-items: center;
   
 }
 
-section:nth-of-type(2) h1 {
+#review h1 {
   font-family: var( --header-font);
   color: var(--accent-2);
   text-align: center;
@@ -360,7 +363,7 @@ section:nth-of-type(2) h1 {
 }
 
 
-section:nth-of-type(2) img {
+#review img {
   margin: 1em;
 }
 
@@ -395,20 +398,19 @@ blockquote::first-letter {
 
 
 
-
-section:nth-of-type(3) {
+#features {
   background-color: var(--third-background);
   text-align: center;
   align-items: center;
 }
 
-section:nth-of-type(3) img {
+#features img {
   max-width: 150%;
   height: auto;
   margin-top: -3em;
 }
 
-section:nth-of-type(3) h3 {
+#features h3 {
   font-family: var( --header-font);
   color: var(--accent-2);
   text-align: center;
@@ -444,13 +446,13 @@ section:nth-of-type(3) h3 {
 /**************/
 
 
-section:nth-of-type(4) {
+#included {
   background-color: var(--background-color);
   text-align: center;
   align-items: center;
 }
 
-section:nth-of-type(4) h2 {
+#included h2 {
   font-family: var( --header-font);
   color: var(--accent-2);
   text-align: center;
@@ -622,13 +624,13 @@ section:nth-of-type(4) h2 {
 /**************/
 
 
-section:nth-of-type(5) {
+#past {
   background-color: var(--fourth-background);
   text-align: center;
   align-items: center;
 }
 
-section:nth-of-type(5) h2 {
+#past h2 {
   font-family: var( --header-font);
   color: var(--accent-2);
   text-align: center;
@@ -661,13 +663,13 @@ section:nth-of-type(5) h2 {
 /**************/
 
 
-section:nth-of-type(6) {
+#concept {
   background-color: var(--background-color);
   text-align: center;
   align-items: center;
 }
 
-section:nth-of-type(6) h2 {
+#concept h2 {
   font-family: var( --header-font);
   color: var(--accent-2);
   text-align: center;
@@ -675,11 +677,11 @@ section:nth-of-type(6) h2 {
   
 }
 
-section:nth-of-type(6) a {
+#concept a {
   color: var(--main-color);  
 }
 
-section:nth-of-type(6) img {
+#concept img {
   margin: 1em; 
 }
 
@@ -696,7 +698,7 @@ section:nth-of-type(6) img {
 
 
 
-section:nth-of-type(7) {
+#plan {
   background-image: url("../images/planbg.png");
   background-color: #ffb5d8;
   color: var(--accent-color);
@@ -704,7 +706,7 @@ section:nth-of-type(7) {
   align-items: center;
 }
 
-section:nth-of-type(7) h2 {
+#plan h2 {
   font-family: var( --header-font);
   color: var(--accent-color);
   text-align: center;
@@ -724,13 +726,13 @@ section:nth-of-type(7) h2 {
 /* Section 8 The community */
 /**************/
 
-section:nth-of-type(8) {
+#join {
   background-color: var(--background-color);
   text-align: center;
   align-items: center;
 }
 
-section:nth-of-type(8) h2 {
+#join h2 {
   font-family: var( --header-font);
   color: var(--accent-2);
   text-align: center;
@@ -753,7 +755,7 @@ section:nth-of-type(8) h2 {
 footer {
   background-color: #ff93c9;
   color: var(--accent-color);
-  padding: 1em;
+  padding: 3em;
 }
 
 footer h2 {
