@@ -133,11 +133,26 @@ Teamgenoten communiceren niet.
 ### Bevindingen
 Lijst met je bevindingen die in de test naar voren kwamen:
 
-#### Titel eerste bevinding
-Hier korte omschrijving (met indien nodig een afbeelding)
+-	States toevoegen ( focus, hover, disabled, active, visited ) 
+-	Screenreader usability verbeteren 
+-	Hamburger menu verduidelijken, krijg button
+-	Blockquote verduidelijken
+-	Koppen verduidelijken bij Features
+-	Scroll horizontal verduidelijken
+-	Geef body een ID en maak van sections weer :first-of
+-	Buttons vergroten voor mobiel 
+	States verduidelijken van de buttons
+-	Footer verduidelijken
+-	Linkjes vergroten van de footer
+-	About mobile tekst breder maken 
+-	Social media buttons aanpassen, want de naam doet het niet op screenreader
+-	Label boven input
 
-Hier een omschrijving van hoe het opgelost kan worden (met indien nodig een afbeelding)
 
+#### States toevoegen, met name focus.
+De focus valt niet op. 
+ 
+De kleuren van de focus aanpassen en eventueel een border, zodat de aandacht van de gebruiker wordt getrokken.
 
 #### Titel tweede bevinding. 
 Hier korte omschrijving (met indien nodig een afbeelding)
