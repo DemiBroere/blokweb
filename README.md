@@ -39,12 +39,12 @@ Surface
  https://www.kawaiibox.com/
  
 #### Screenshot(s) van de eerste pagina (small screen): 
-hier de naam van de pagina  
+Hoofdpagina  
 <img src="images/Screenshot_1.png" width="375px" alt="omschrijving van de pagina">
 
 #### Screenshot(s) van de tweede pagina (small screen):
-hier de naam van de pagina  
-<img src="images/Screenshot_2.png" width="375px" alt="omschrijving van de pagina"> 
+About
+ <img src="images/..." width="375px" alt="omschrijving van de pagina"> 
  
 </details>
 
@@ -79,6 +79,13 @@ Ik ben deze week druk bezig geweest met het opzetten van de html en langzaam aan
  
 Er was een ding waar ik een beetje tegenaan liep en dat was het onderstaande. In de officiële website is dit een slider met buttons, maar ik heb er een slider van gemaakt met scroll. Ik hoop een carousel nog toe te voegen bij een ander deel van de website, zodat ik die er toch in verwerkt heb. 
  <img src="images/lastig.png" width="375px" alt="breakdown van een dynamisch deel">
+ 
+ 
+### Agenda voor meeting
+samen met je groepje opstellen
+
+Teamgenoten communiceren niet. 
+
 
 ### Verslag van meeting
  
@@ -105,20 +112,12 @@ Eindelijk had ik de form goed gekregen.
 ### Agenda voor meeting
 samen met je groepje opstellen
 
-| student 1      | student 2          | student 3    | student 4        |
-| ---            | ---                | ---          | ---              |
-| dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-| en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-| ...            | ...                | ...          | ...              |
+Teamgenoten communiceren niet. 
 
 
 ### Verslag van meeting
-hier na afloop snel de uitkomsten van de meeting vastleggen
 
-- punt 1
-- punt 2
-- nog een punt
-- ...
+ In de meeting was naar voren gekomen dat niet precies alles hetzelfde moest en dat je ook dingen anders mag doen. Dit gaf me wel wat meer rust. Ik moest nog wat focussen op de buttons en de margins rondom de footer. Dit heb ik dan ook aangepast.
 
 </details>
 
