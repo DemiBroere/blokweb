@@ -133,20 +133,15 @@ Teamgenoten communiceren niet.
 ### Bevindingen
 Lijst met je bevindingen die in de test naar voren kwamen:
 
--	States toevoegen ( focus, hover, disabled, active, visited ) 
--	Screenreader usability verbeteren 
--	Hamburger menu verduidelijken, krijg button
--	Blockquote verduidelijken
--	Koppen verduidelijken bij Features
--	Scroll horizontal verduidelijken
--	Geef body een ID en maak van sections weer :first-of
--	Buttons vergroten voor mobiel 
-	States verduidelijken van de buttons
--	Footer verduidelijken
--	Linkjes vergroten van de footer
--	About mobile tekst breder maken 
--	Social media buttons aanpassen, want de naam doet het niet op screenreader
--	Label boven input
+1.	States toevoegen ( focus, hover, disabled, active, visited ) 
+2.	Hamburger menu verduidelijken, krijg button
+3.	Blockquote verduidelijken
+4.	Geef body een ID en maak van sections weer :first-of
+5.	Buttons vergroten voor mobiel 
+6.	Linkjes vergroten van de footer
+7.	About mobile tekst breder maken 
+8.	Social media buttons aanpassen, want de naam doet het niet op screenreader
+9.	Label boven input
 
 
 #### States toevoegen, met name focus.
@@ -154,22 +149,42 @@ De focus valt niet op.
  
 De kleuren van de focus aanpassen en eventueel een border, zodat de aandacht van de gebruiker wordt getrokken.
 
-#### Titel tweede bevinding. 
-Hier korte omschrijving (met indien nodig een afbeelding)
+#### Mobiel menu
+De menubutton op mobiel wordt weergegeven als button door de screenreader. 
+
+Een alt toevoegen aan de button. 
+
+
+#### Blockquote verduidelijken.
+Het was niet echt duidelijk dat het ging om een quote. 
 
 Hier een omschrijving van hoe het opgelost kan worden (met indien nodig een afbeelding)
 
 
-#### Titel volgende bevinding. 
-Hier korte omschrijving (met indien nodig een afbeelding)
+#### Footer links
+De linkjes van de footer waren zo klein dat ze moeilijk te lezen waren. 
 
-Hier een omschrijving van hoe het opgelost kan worden (met indien nodig een afbeelding)
+De tekst iets groter maken, zodat het niet zo wegvalt en gebruikers het alsnog kunnen lezen. 
 
+#### Label boven input email
+Het was voor de screenreader niet duidelijk, ook is het voor mensen die het moeilijk vinden om zich te concentreren misschien moeilijk te onthouden dat het bij deze gaat om een e-mail. 
 
-#### Titel nog een bevinding. 
-Hier korte omschrijving (met indien nodig een afbeelding)
+Een label toevoegen met 'e-mail'. 
 
-Hier een omschrijving van hoe het opgelost kan worden (met indien nodig een afbeelding)
+#### Social media buttons aanpassen, want de naam doet het niet op screenreader
+
+De social media buttons werden door de screenreader helemaal niet opgelezen, waardoor ze niet zouden snappen waar het over ging. 
+
+Alts toevoegen?
+
+#### About mobile tekst breder maken 
+
+Op de mobiele pagina was de about tekst heel erg smal. 
+
+De width aanpassen, zodat het de hele breedte in beslag neemt. 
+
+#### Buttons vergroten voor mobiel 
+De buttons op mobiel vielen niet erg op en waren moeilijk aan te klikken voor mensen met een beperking zoals parkinson, waarbij je hele arm trilt en je weinig controle hebt. 
 
 </details>
 
