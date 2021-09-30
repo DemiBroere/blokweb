@@ -1,5 +1,5 @@
-var menuButton = document.querySelector("#mobile button");
-var menuSee = document.querySelector("#mobile ul");
+var menuButton = document.querySelector("nav button");
+var menuSee = document.querySelector("nav ul");
 
 function toonMenu() {
     menuSee.classList.toggle("terug");
