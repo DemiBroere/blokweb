@@ -109,8 +109,16 @@ a {
   text-decoration: none;
 }
 
+h1 {
+  font-size: 3em;
+}
+
 h2 {
   font-size: 2em;
+}
+
+h1, h2 {
+  margin-top: -0.10em;
 }
 
 ul, li, a {
@@ -153,6 +161,14 @@ header {
 
   nav button:hover {
     display: none;
+  }
+
+  nav button:focus {
+    color:rgb(255, 80, 153)
+  }
+
+  nav a.active {
+    color: rgb(255, 80, 153);
   }
 
   nav ul {
@@ -287,7 +303,7 @@ section {
 .kawaiifycontent h1 {
   font-family: var(--header-font);
   font-size: 3em;
-  line-height: 0.75em;
+  line-height: 0.85em;
   text-transform: uppercase;
   color: var(--accent-color);
   font-weight:bolder;
@@ -355,7 +371,7 @@ section {
   
 }
 
-#review h1 {
+#review h2 {
   font-family: var( --header-font);
   color: var(--accent-2);
   text-align: center;
@@ -604,7 +620,6 @@ blockquote::first-letter {
   }
 }
 
-
 .hoverbutton {
   background-color: transparent;
   font-size: 0.75em;
@@ -619,9 +634,19 @@ blockquote::first-letter {
   text-decoration: none;
 }
 
+
+
+
+
+
+
 /**************/
 /* Section 5 Carousel */
 /**************/
+
+
+
+
 
 
 #past {
@@ -658,13 +683,26 @@ blockquote::first-letter {
 
 
 
+
+
+
+
+
+
 /**************/
 /* Section 6 */
 /**************/
 
 
+
+
+
+
+
 #concept {
+  width: 50%;
   background-color: var(--background-color);
+  margin: auto auto;
   text-align: center;
   align-items: center;
 }
@@ -672,17 +710,25 @@ blockquote::first-letter {
 #concept h2 {
   font-family: var( --header-font);
   color: var(--accent-2);
-  text-align: center;
-  align-items: center;
-  
 }
 
 #concept a {
   color: var(--main-color);  
 }
 
+#concept a:hover {
+  color: var(--accent-2);  
+  transition: 0.3s ease-in;
+}
+
+
 #concept img {
   margin: 1em; 
+}
+
+#concept a:hover {
+  transform: rotate(360deg);
+  transition: 0.5s ease-in;
 }
 
 
@@ -693,8 +739,12 @@ blockquote::first-letter {
 
 
 /**************/
-/* Section 7 */
+/* Section 7 het plan */
 /**************/
+
+
+
+
 
 
 
@@ -716,13 +766,6 @@ blockquote::first-letter {
 }
 
 
-
-
-
-
-
-
-
 /**************/
 /* Section 8 The community */
 /**************/
@@ -736,8 +779,6 @@ blockquote::first-letter {
 #join h2 {
   font-family: var( --header-font);
   color: var(--accent-2);
-  text-align: center;
-  align-items: center;
   
 }
 
@@ -748,9 +789,45 @@ blockquote::first-letter {
 
 
 
+/**************/
+/* About.html */
+/**************/
+
+
+
+
+
 
 /**************/
-/* Section 9 footer */
+/* section 1 introduction */
+/**************/
+
+video {
+  width: 50%;
+}
+
+@media only screen and (max-width: 600px) { 
+  video {
+    width: 100%;
+  }
+}
+
+#introduction {
+  background-image: url("../images/kb-heropic-desktop-1b.jpg");
+  align-items: center;
+}
+
+
+
+#introduction h2 {
+  font-family: var( --header-font);
+  color: var(--accent-2);
+}
+
+
+
+/**************/
+/*  footer */
 /**************/
 
 footer {
