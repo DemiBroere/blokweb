@@ -198,17 +198,13 @@ De buttons op mobiel vielen niet erg op en waren moeilijk aan te klikken voor me
 <summary>uitwerken voor 3e voortgang</summary>
 
 ### Stand van zaken
-hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+Ook deze week verliep eigenlijk alles weer soepel, ik wist wat me te doen stond en waar ik nog aan moest werken om mijn eindproduct te kunnen opleveren. Ik vond de carousel erg lastig om te doen. 
 
 
 ### Agenda voor meeting
 samen met je groepje opstellen
 
-| student 1      | student 2          | student 3    | student 4        |
-| ---            | ---                | ---          | ---              |
-| dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-| en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-| ...            | ...                | ...          | ...              |
+We bespraken niet echt dingen met het groepje, we gingen vaak gewoon over de algemene dingen per persoon en bespraken daar waar we tegen aan liepen. 
 
 
 ### Verslag van meeting
