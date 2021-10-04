@@ -44,7 +44,7 @@ Hoofdpagina
 
 #### Screenshot(s) van de tweede pagina (small screen):
 About
- <img src="images/..." width="375px" alt="omschrijving van de pagina"> 
+ <img src="images/Screenshot_2.pn" width="375px" alt="omschrijving van de pagina"> 
  
 </details>
 
