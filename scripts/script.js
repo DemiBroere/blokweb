@@ -1,3 +1,4 @@
+
 /* stop animation and transition when resizing the page */
 
 let resizeTimer;
