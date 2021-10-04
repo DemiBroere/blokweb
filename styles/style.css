@@ -30,11 +30,12 @@
   --main-color:#333;
   --accent-color:#fff;
   --accent-2:#ff7abc;
-  --shadow: 0.05em 0.05em rgb(0 0 0 / 14%);
+  --shadow: 0.05em 0.05em rgb(80 57 61 / 25%);
 
   /* Button */
   --button-background1:#ff7abc;
   --button-background2:#88c7ff;
+  --button-hover: #dd7cac;
 
   /* Footer */
   --footer-text-color:#fff; 
@@ -70,6 +71,17 @@
   background: rgb(255, 80, 153);
 }
 
+
+
+
+/**************/
+/* loader */
+/**************/
+
+
+
+
+
 /**************/
 /* Basis */
 /**************/
@@ -99,11 +111,12 @@ button {
   border: 0.05em solid #ff93c9;
   border-radius: 0.5em;
   transition: all 0.25s ease-in-out;
+  cursor: pointer;
 }
 
 button:hover {
-  background-color: #ffb8dc;
-  border-color: #ffb8dc;
+  background-color: var(--button-hover);
+  border-color: var(--button-hover);
   box-shadow: var(--shadow);
 }
 
@@ -116,8 +129,7 @@ a {
 }
 
 h1 {
-  font-size: 3em;
-
+  font-size: 3em
   
 }
 
@@ -146,11 +158,31 @@ ul, li, a {
 /* States */
 
 :focus {
-  background-color: #8669ab;
-  border: 4px solid var(--accent-2);
-  padding: 5px;
+  background-color: #b69cd8;
+  color: var(--accent-color);
+  border: 2px solid var(--accent-2);
+  padding: 10px;
   outline: none;
 }
+
+input:focus::-webkit-input-placeholder {
+  color: var(--accent-color);
+}
+
+:disabled {
+  background-color: #7b7b7b;
+  color: var(--accent-color);
+  padding: 10px;
+  outline: none;
+}
+
+:disabled:hover {
+  background-color: #a0a0a0;
+  color: var(--accent-color);
+  padding: 10px;
+  outline: none;
+}
+
 
 
 /**************/
@@ -182,7 +214,7 @@ header {
     z-index: 9999;
   }
 
-  button {
+  nav button {
     display: none;
   }
 
@@ -271,26 +303,26 @@ header {
     margin-left: 1em;
   }
 
-  .menu {
+  nav .menu {
     font-family: "Quicksand";
   }
 
   
-  button {
+  nav button {
     background:none;
     border: none;
     padding: 0;
     margin: 0;
   }
 
-  button:hover {
+  nav button:hover {
     background:none;
     border: none;
     box-shadow: none;
     cursor: pointer;
   }
 
-  button:focus {
+  nav button:focus {
     background: none;
     border:none;
   }
@@ -345,8 +377,8 @@ section {
   font-family: var(--header-font);
   color: var(--accent-color);
   font-weight:bolder;
-  text-shadow: var(--shadow);
   margin-top: -0.5em;
+  text-shadow: var(--shadow);
 }
 
 .kawaiifycontent h3 {
@@ -354,8 +386,8 @@ section {
   font-size: 1.5em;
   color: var(--accent-color);
   font-weight:bolder;
-  text-shadow: var(--shadow);
   margin-top: -0.25em;
+  text-shadow: var(--shadow);
 }
 
 
@@ -428,6 +460,7 @@ section {
 
 blockquote {
   color: var(--accent-2);
+  font-weight: bold;
   font-style: italic;
 }
 
@@ -464,6 +497,12 @@ blockquote::first-letter {
   
 }
 
+#index section:nth-of-type(3) span {
+  background-color: var(--third-background);
+  text-align: center;
+  align-items: center;
+}
+
 .feature-icon {
   position: relative;
   background-color: var(--accent-2);
@@ -471,6 +510,11 @@ blockquote::first-letter {
   width: 3.5em;
   height: 3.5em;
   border-radius: 50%;
+  
+  animation: bounce;
+  animation-timing-function: ease;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
 }
 
 .feature-icon .fa {
@@ -484,6 +528,12 @@ blockquote::first-letter {
   bottom: 0;
   left: 0;
   margin: auto;
+}
+
+@keyframes bounce {
+  0%   { transform: translateY(0); }
+  50%  { transform: translateY(-10px); }
+  100% { transform: translateY(0); }
 }
 
 
@@ -529,8 +579,7 @@ blockquote::first-letter {
 
 @media screen and (min-width: 600px) {
 
-  .grid { 
-    width: 100%;
+  #index .grid { 
     position: relative;  
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(1fr 1fr 1fr));
@@ -539,27 +588,28 @@ blockquote::first-letter {
     margin-top: 1em;
   }
 
-  .grid-item {
+  #index .grid-item {
+    width: 100%;
     position: relative;
     display: block;
     overflow: hidden;
     
   }
 
-  .grid-item:nth-of-type(5n) {
-    grid-column:span 2;
+  #index .grid-item:nth-of-type(5n) {
+    grid-column: span 2;
   }
   
-  .grid-item img {
+  #index .grid-item img {    
     max-width: 100%;
-    transition: all 0.3s;
+    transition: all 0.3s;  
   }
   
-  .grid-item:hover img {
+  #index .grid-item:hover img {
     transform: scale(1.3);
   }
   
-  .overlay {
+  #index .overlay {
     background: rgba(255, 116, 174, 0.9);
     position: absolute;
     top: 0;
@@ -571,12 +621,12 @@ blockquote::first-letter {
     transition: .5s ease;
   }
   
-  .grid-item:hover .overlay {
+  #index .grid-item:hover .overlay {
     overflow: hidden;
     opacity: 1;
   }
   
-  .content {
+  #index .content {
     width:100%;
     position: absolute;
     color: var(--accent-color);
@@ -596,7 +646,7 @@ blockquote::first-letter {
 
 /* Grid met img hover */
 
-  .grid { 
+#index .grid { 
     position: relative;
     display: flex;
     flex-direction: column;
@@ -605,23 +655,23 @@ blockquote::first-letter {
     margin-right: -3em;
   }
 
-  .grid-item {
+  #index .grid-item {
     position: relative;
     overflow: hidden;
     margin: 1em;
   }
 
-  .grid-item img {
+  #index .grid-item img {
     vertical-align: top;
     max-width: 100%;
     transition: all 0.3s;
   }
 
-  .grid-item:hover img {
+  #index .grid-item:hover img {
     transform: scale(1.3);
   }
 
-  .overlay {
+  #index .overlay {
     background: rgba(255, 116, 174, 0.9);
     position: absolute;
     top: 0;
@@ -633,12 +683,12 @@ blockquote::first-letter {
     transition: .5s ease;
   }
 
-  .grid-item:hover .overlay {
+  #index .grid-item:hover .overlay {
     overflow: hidden;
     opacity: 1;
   }
 
-  .content {
+  #index .content {
     width:100%;
     position: absolute;
     color: var(--accent-color);
@@ -648,9 +698,10 @@ blockquote::first-letter {
     transform: translate(-50%, -50%);
     text-align: center;
   }
+  
 }
 
-.hoverbutton {
+#index .hoverbutton {
   background-color: transparent;
   font-size: 0.75em;
   padding: 0.5em;
@@ -658,7 +709,7 @@ blockquote::first-letter {
   border-radius: 0.5em;
 }
 
-.hoverbutton a {
+#index .hoverbutton a {
   background-color: transparent;
   color: var(--accent-color);
   text-decoration: none;
@@ -681,40 +732,13 @@ blockquote::first-letter {
 
 #index section:nth-of-type(5) {
   background-color: var(--fourth-background);
-  text-align: center;
-  align-items: center;
+  text-align: center; 
 }
 
 #index section:nth-of-type(5) h2 {
   font-family: var( --header-font);
   color: var(--accent-2);
-  text-align: center;
-  align-items: center;  
 }
-
-.pastcontainer {
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-}
-
-.pastitem {
-  background: #fff;
-  overflow: hidden;
-  text-align: center;
-  margin-bottom: 1em;
-  max-width: 300px;
-  border-radius: 8px;
-}
-
-.pastitem img {
-  max-width: 100%;
-}
-
-
-
-
-/* Base styles for this example */
 
 #index section:nth-of-type(5) input {
   opacity: 0;
@@ -724,66 +748,69 @@ blockquote::first-letter {
 }
 
 
-.wrapper {
-  width: 50%; 
+#index .wrapper {
   display: flex;
+  position: relative;
+  width:100%;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+  justify-content: center;
   
 }
 
-.slide {
+#index .slide {
   width: 0;
 }
 
-.inner {
-  width: 400px;
+#index .pastitem {
+  background: #fff;
+  overflow: hidden;
+  margin-bottom: 1em;
+  border-radius: 8px;
 }
+
+#index .pastitem img {
+  max-width: 100%;
+}
+
 
 /* Additional styling */
 
-span {
-  background-color: white;
-  text-align: center;
-  line-height: 4rem;
-  width: 4rem;
-  border-radius: 8rem;
-  color: #616161;
-  font-size: 2rem;
-}
-
-.inner {
-  display: flex;
-  justify-content: center;
-  align-items: center;  
-  padding: 30px;
+#index .inner {
+  width: 300px;
+  margin-left: -150px;
   opacity: 0;
-  pointer-events: none;
   transition: opacity .6s;
   overflow-y: auto;
 }
 
-#i_1:checked ~ .wrapper .content1,
-#i_2:checked ~ .wrapper .content2,
-#i_3:checked ~ .wrapper .content3,
-#i_4:checked ~ .wrapper .content4 {
+#index  #i_1:checked ~ .wrapper .content1,
+#index  #i_2:checked ~ .wrapper .content2,
+#index  #i_3:checked ~ .wrapper .content3,
+#index  #i_4:checked ~ .wrapper .content4 {
   opacity: 1;
 }
 
-label {
+#index .ctrl_label {
+  font-size: 20px;
+  font-weight: bolder;
+  padding: 1em;
   color: #8669ab;
   transition-duration: .6s;
   cursor: pointer;
 }
 
-.controls {
-    margin: 0;
-    padding: 0;
+#index .controls {
+    margin: 10px;
+    padding: 10px;
 }
 
-#i_1:checked ~ .controls label[for="i_1"],
-#i_2:checked ~ .controls label[for="i_2"],
-#i_3:checked ~ .controls label[for="i_3"],
-#i_4:checked ~ .controls label[for="i_4"] {
-  color: #ff93c9;
+  #index  #i_1:checked ~ .controls .ctrl_label[for="i_1"],
+  #index  #i_2:checked ~ .controls .ctrl_label[for="i_2"],
+  #index  #i_3:checked ~ .controls .ctrl_label[for="i_3"],
+  #index  #i_4:checked ~ .controls .ctrl_label[for="i_4"] {
+    color: #ff93c9;
 }
 
 
@@ -903,12 +930,15 @@ label {
 /**************/
 
 video {
-  width: 50%;
+  width: 100%;
 }
 
-@media only screen and (max-width: 600px) { 
-  video {
-    width: 100%;
+/* Video on desktop = 50% */
+
+@media screen and (min-width: 600px)  {
+
+ video {
+    width: 50%;
   }
 }
 
@@ -963,14 +993,12 @@ video {
   transition: 0.5s ease-in;
 }
 
+/* About content on desktop is 50% */
 
-@media only screen and (max-width: 600px) {
+@media screen and (min-width: 600px)  {
+
   #about section:nth-of-type(2) {
-    width: 100%;
-    background-color: var(--background-color);
-    margin: auto auto;
-    text-align: center;
-    align-items: center;
+    width: 50%;
   }
 }
 
@@ -1112,7 +1140,7 @@ footer .started {
 }
 
 footer .started:hover {
-  background-color: #80ccf1;
+  background-color: #abcef8;
   transition: 0.5s ease-in;
 }
 
@@ -1120,10 +1148,14 @@ footer .started:hover {
 /* Forms */
 /**************/
 
-form {
-  display: flex;
+footer form {
   position: relative;
   padding-bottom: 1em;
+}
+
+footer label.ftr_label {
+  display:block;
+  margin-bottom: 1em;
 }
 
 footer input#email {
@@ -1139,7 +1171,6 @@ button.news-submit {
   width: 50px;
   height: 2.5em;
   position: absolute;
-  cursor: pointer;
   color:rgb(255, 80, 153);
   right: 0;
 }
@@ -1155,9 +1186,4 @@ footer button, footer button:hover {
   transition: none;
 }
 
-
-
-/* slider */
-
-/* Base styles for this example */
 
