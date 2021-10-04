@@ -4,6 +4,10 @@
 }
 
 
+.resize-animation-stopper * {
+  transition: none !important;
+  animation: none !important;
+}
 
 
 
@@ -22,7 +26,7 @@
   
   
   /* Text */
-  --header-font: Kanit;
+  --header-font: Paytone One, sans-serif; 
   --main-color:#333;
   --accent-color:#fff;
   --accent-2:#ff7abc;
@@ -30,8 +34,10 @@
 
   /* Button */
   --button-background1:#ff7abc;
-  --button-background2:#b9e2f8;
+  --button-background2:#88c7ff;
 
+  /* Footer */
+  --footer-text-color:#fff; 
  
 }
 
@@ -73,7 +79,6 @@ body {
   background: #fff;
   color: #666;
   font-family: 'Quicksand', sans-serif;
-  font-weight: 400;
   font-size: 1em;
   line-height: 1.25em;
   margin: 0;
@@ -83,8 +88,9 @@ body {
 
 button {
   background-color: #ff93c9;
-  color: #fff;
-  width: 12em;
+  color: var(--accent-color);
+  width: 200px;
+  height: 50px;
   text-transform: uppercase;
   font-weight: bold;
   letter-spacing: 0.15em;
@@ -111,6 +117,8 @@ a {
 
 h1 {
   font-size: 3em;
+
+  
 }
 
 h2 {
@@ -119,11 +127,29 @@ h2 {
 
 h1, h2 {
   margin-top: -0.10em;
+  letter-spacing: 2px;
+  line-height: 1em;
+  letter-spacing: 2px;
+}
+
+h3 {
+  letter-spacing: 2px;
+  line-height: 1em;
+  letter-spacing: 2px;
 }
 
 ul, li, a {
   text-decoration: none;
   list-style-type: none;
+}
+
+/* States */
+
+:focus {
+  background-color: #8669ab;
+  border: 4px solid var(--accent-2);
+  padding: 5px;
+  outline: none;
 }
 
 
@@ -152,33 +178,30 @@ header {
     text-transform: uppercase;
     text-align: center;
     color: #8669ab;
+    border-bottom: 2px solid var(--accent-2);
     z-index: 9999;
   }
 
-  nav button {
+  button {
     display: none;
-  }
-
-  nav button:hover {
-    display: none;
-  }
-
-  nav button:focus {
-    color:rgb(255, 80, 153)
   }
 
   nav a.active {
     color: rgb(255, 80, 153);
   }
 
-  nav ul {
+  button ul {
+    transition: none;
+    transition-delay: none;
     transform: none;
   }
 
-  nav ul.terug {
+
+
+  button ul.terug {
+    transition: none;
+    transition-delay: none;
     transform: none;
-    transition:none;
-    opacity: 0;
    }
   
   ul {
@@ -197,26 +220,15 @@ header {
 
 @media only screen and (max-width: 600px) {
 
-  nav button {
-    background:none;
-    border: none;
-    padding: 0;
-    margin: 0;
-  }
-
-  nav button:hover {
-    background:none;
-    border: none;
-    box-shadow: none;
-    cursor: pointer;
-  }
 
   nav  {
     background-color: white;
     position: sticky;
     top: 0;
+    height: 80px;
     font-weight: 700;
     text-transform: uppercase;
+    border-bottom: 2px solid var(--accent-2);
     z-index: 99;
   }
 
@@ -225,7 +237,7 @@ header {
     display: inline-flex;
     flex-direction: column;
     position: absolute;
-    top: 30px;
+    top: 60px;
     left:10px;
     width: 90%;
     border: 1px solid #ff7abc;
@@ -262,6 +274,26 @@ header {
   .menu {
     font-family: "Quicksand";
   }
+
+  
+  button {
+    background:none;
+    border: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  button:hover {
+    background:none;
+    border: none;
+    box-shadow: none;
+    cursor: pointer;
+  }
+
+  button:focus {
+    background: none;
+    border:none;
+  }
 }
 
 /**************/
@@ -284,18 +316,18 @@ section {
 /* Section 1: kawaiify */
 /**************/
 
-#kawaiify {
+#index section:first-of-type {
   background-color: var(--second-background);
   text-align: center;
 }
 
-#kawaiify img {
+#index section:first-of-type img {
   max-width: 150%;
   height: auto;
   margin-top: -2em;
 }
 
-#kawaiify button {
+#index section:first-of-type button {
   bottom: 0;
 }
 
@@ -303,7 +335,6 @@ section {
 .kawaiifycontent h1 {
   font-family: var(--header-font);
   font-size: 3em;
-  line-height: 0.85em;
   text-transform: uppercase;
   color: var(--accent-color);
   font-weight:bolder;
@@ -312,7 +343,6 @@ section {
 
 .kawaiifycontent h2 {
   font-family: var(--header-font);
-  font-size: 2em;
   color: var(--accent-color);
   font-weight:bolder;
   text-shadow: var(--shadow);
@@ -331,14 +361,14 @@ section {
 
 @media screen and (min-width: 600px) {
 
-  #kawaiify {
+  #index section:first-of-type {
     background-image: url("../images/kb-heropic-desktop-1b.jpg");
     background-position: center center;
     background-repeat: no-repeat;
     text-align: left;
   }
 
-  #kawaiify img {
+  #index section:first-of-type img {
     max-width: 100%;
     display: none;
   }
@@ -364,14 +394,14 @@ section {
 
 
 
-#review {
+#index section:nth-of-type(2) {
   background-color: var(--background-color);
   text-align: center;
   align-items: center;
   
 }
 
-#review h2 {
+#index section:nth-of-type(2) h2 {
   font-family: var( --header-font);
   color: var(--accent-2);
   text-align: center;
@@ -379,7 +409,7 @@ section {
 }
 
 
-#review img {
+#index section:nth-of-type(2) img {
   margin: 1em;
 }
 
@@ -414,19 +444,19 @@ blockquote::first-letter {
 
 
 
-#features {
+#index section:nth-of-type(3) {
   background-color: var(--third-background);
   text-align: center;
   align-items: center;
 }
 
-#features img {
+#index section:nth-of-type(3) img {
   max-width: 150%;
   height: auto;
   margin-top: -3em;
 }
 
-#features h3 {
+#index section:nth-of-type(3) h3 {
   font-family: var( --header-font);
   color: var(--accent-2);
   text-align: center;
@@ -462,13 +492,13 @@ blockquote::first-letter {
 /**************/
 
 
-#included {
+#index section:nth-of-type(4) {
   background-color: var(--background-color);
   text-align: center;
   align-items: center;
 }
 
-#included h2 {
+#index section:nth-of-type(4) h2 {
   font-family: var( --header-font);
   color: var(--accent-2);
   text-align: center;
@@ -649,13 +679,13 @@ blockquote::first-letter {
 
 
 
-#past {
+#index section:nth-of-type(5) {
   background-color: var(--fourth-background);
   text-align: center;
   align-items: center;
 }
 
-#past h2 {
+#index section:nth-of-type(5) h2 {
   font-family: var( --header-font);
   color: var(--accent-2);
   text-align: center;
@@ -684,6 +714,77 @@ blockquote::first-letter {
 
 
 
+/* Base styles for this example */
+
+#index section:nth-of-type(5) input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+  position: absolute;
+}
+
+
+.wrapper {
+  width: 50%; 
+  display: flex;
+  
+}
+
+.slide {
+  width: 0;
+}
+
+.inner {
+  width: 400px;
+}
+
+/* Additional styling */
+
+span {
+  background-color: white;
+  text-align: center;
+  line-height: 4rem;
+  width: 4rem;
+  border-radius: 8rem;
+  color: #616161;
+  font-size: 2rem;
+}
+
+.inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;  
+  padding: 30px;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity .6s;
+  overflow-y: auto;
+}
+
+#i_1:checked ~ .wrapper .content1,
+#i_2:checked ~ .wrapper .content2,
+#i_3:checked ~ .wrapper .content3,
+#i_4:checked ~ .wrapper .content4 {
+  opacity: 1;
+}
+
+label {
+  color: #8669ab;
+  transition-duration: .6s;
+  cursor: pointer;
+}
+
+.controls {
+    margin: 0;
+    padding: 0;
+}
+
+#i_1:checked ~ .controls label[for="i_1"],
+#i_2:checked ~ .controls label[for="i_2"],
+#i_3:checked ~ .controls label[for="i_3"],
+#i_4:checked ~ .controls label[for="i_4"] {
+  color: #ff93c9;
+}
 
 
 
@@ -699,34 +800,33 @@ blockquote::first-letter {
 
 
 
-#concept {
-  width: 50%;
+#index section:nth-of-type(6) {
   background-color: var(--background-color);
   margin: auto auto;
   text-align: center;
   align-items: center;
 }
 
-#concept h2 {
+#index section:nth-of-type(6) h2 {
   font-family: var( --header-font);
   color: var(--accent-2);
 }
 
-#concept a {
+#index section:nth-of-type(6) a {
   color: var(--main-color);  
 }
 
-#concept a:hover {
+#index section:nth-of-type(6) a:hover {
   color: var(--accent-2);  
   transition: 0.3s ease-in;
 }
 
 
-#concept img {
+#index section:nth-of-type(6) img {
   margin: 1em; 
 }
 
-#concept a:hover {
+#index section:nth-of-type(6) a:hover {
   transform: rotate(360deg);
   transition: 0.5s ease-in;
 }
@@ -748,7 +848,7 @@ blockquote::first-letter {
 
 
 
-#plan {
+#index section:nth-of-type(7) {
   background-image: url("../images/planbg.png");
   background-color: #ffb5d8;
   color: var(--accent-color);
@@ -757,7 +857,7 @@ blockquote::first-letter {
   margin-bottom: 1em;
 }
 
-#plan h2 {
+#index section:nth-of-type(7) h2 {
   font-family: var( --header-font);
   color: var(--accent-color);
   text-align: center;
@@ -770,13 +870,13 @@ blockquote::first-letter {
 /* Section 8 The community */
 /**************/
 
-#join {
+#index section:nth-of-type(8) {
   background-color: var(--background-color);
   text-align: center;
   align-items: center;
 }
 
-#join h2 {
+#index section:nth-of-type(8) h2 {
   font-family: var( --header-font);
   color: var(--accent-2);
   
@@ -812,16 +912,112 @@ video {
   }
 }
 
-#introduction {
+#about section:first-of-type {
   background-image: url("../images/kb-heropic-desktop-1b.jpg");
   align-items: center;
 }
 
 
 
-#introduction h2 {
+#about section:first-of-type h2 {
   font-family: var( --header-font);
   color: var(--accent-2);
+}
+
+
+/**************/
+/* section 2 the story */
+/**************/
+
+
+
+#about section:nth-of-type(2) {
+  width: 100%;
+  background-color: var(--background-color);
+  margin: auto auto;
+  text-align: center;
+  align-items: center;
+}
+
+#about section:nth-of-type(2) h2 {
+  font-family: var( --header-font);
+  color: var(--accent-2);
+}
+
+#about section:nth-of-type(2) a {
+  color: var(--main-color);  
+}
+
+#about section:nth-of-type(2) a:hover {
+  color: var(--accent-2);  
+  transition: 0.3s ease-in;
+}
+
+
+#about section:nth-of-type(2) img {
+  margin: 1em; 
+}
+
+#about section:nth-of-type(2) a:hover {
+  transform: rotate(360deg);
+  transition: 0.5s ease-in;
+}
+
+
+@media only screen and (max-width: 600px) {
+  #about section:nth-of-type(2) {
+    width: 100%;
+    background-color: var(--background-color);
+    margin: auto auto;
+    text-align: center;
+    align-items: center;
+  }
+}
+
+
+/**************/
+/* section 3 Example brands */
+/**************/
+
+
+#about section:nth-of-type(3) {
+  background-image: url("../images/planbg.png");
+  background-color: #ffb5d8;
+  color: var(--accent-color);
+  text-align: center;
+  align-items: center;
+  margin-bottom: 1em;
+}
+
+#about section:nth-of-type(3) h2 {
+  font-family: var( --header-font);
+  color: var(--accent-color);
+  text-align: center;
+  align-items: center;
+  
+}
+
+
+
+/**************/
+/* section 4 Plan */
+/**************/
+
+
+#about section:nth-of-type(4) {
+  background-color: var(--background-color);
+  color: var(--main-color);
+  text-align: center;
+  align-items: center;
+  margin-bottom: 1em;
+}
+
+#about section:nth-of-type(4) h2 {
+  font-family: var( --header-font);
+  color: var(--accent-2);
+  text-align: center;
+  align-items: center;
+  
 }
 
 
@@ -845,19 +1041,20 @@ footer h2 {
 }
 
 footer h5 {
-  font-size: 1.1em;
+  font-size: 1.3em;
+  letter-spacing: 2px;
   font-family: var( --header-font);
   color: var(--accent-color);
   
 }
 
 footer p { /* Changes the size of the footer's paragraph */
-  font-size: 0.9em;  
-  color: #fff;
+  font-size: 1em;  
+  color: var(--accent-color);
 }
 
 footer ul, footer li {
-  margin: 0;
+  margin: 5px;
   padding: 0;
 }
 
@@ -878,8 +1075,8 @@ footer li {
 }
 
 footer a { 
-  font-size: 0.9em;  
-  color: #fff;
+  font-size: 1em;  
+  color: var(--accent-color);
 }
 
 footer .copyright {
@@ -888,14 +1085,14 @@ footer .copyright {
 }
 
 footer .site-info {
-  color: #fff;
+  color: var(--accent-color);
   font-size: 0.8em;
   text-transform: none;
 }
 
 footer .site-info a {
   text-decoration: none;
-  color: #fff;
+  color: var(--accent-color);
 }
 
 footer .fa {
@@ -915,7 +1112,8 @@ footer .started {
 }
 
 footer .started:hover {
-  background-color: #caedff;
+  background-color: #80ccf1;
+  transition: 0.5s ease-in;
 }
 
 /**************/
@@ -956,3 +1154,10 @@ footer button, footer button:hover {
   border: none;
   transition: none;
 }
+
+
+
+/* slider */
+
+/* Base styles for this example */
+
