@@ -135,31 +135,22 @@ Lijst met je bevindingen die in de test naar voren kwamen:
 
 1.	States toevoegen ( focus, hover, disabled, active, visited ) 
 2.	Hamburger menu verduidelijken, krijg button
-3.	Blockquote verduidelijken
 4.	Geef body een ID en maak van sections weer :first-of
 5.	Buttons vergroten voor mobiel 
-6.	Linkjes vergroten van de footer
+6.	Linkjes en tekst vergroten van de footer
 7.	About mobile tekst breder maken 
-8.	Social media buttons aanpassen, want de naam doet het niet op screenreader
 9.	Label boven input
 
 
 #### States toevoegen, met name focus.
 De focus valt niet op. 
  
-De kleuren van de focus aanpassen en eventueel een border, zodat de aandacht van de gebruiker wordt getrokken.
+De kleuren van de focus aanpassen zodat de aandacht van de gebruiker wordt getrokken.
 
 #### Mobiel menu
 De menubutton op mobiel wordt weergegeven als button door de screenreader. 
 
 Een alt toevoegen aan de button. 
-
-
-#### Blockquote verduidelijken.
-Het was niet echt duidelijk dat het ging om een quote. 
-
-Hier een omschrijving van hoe het opgelost kan worden (met indien nodig een afbeelding)
-
 
 #### Footer links
 De linkjes van de footer waren zo klein dat ze moeilijk te lezen waren. 
@@ -170,12 +161,6 @@ De tekst iets groter maken, zodat het niet zo wegvalt en gebruikers het alsnog k
 Het was voor de screenreader niet duidelijk, ook is het voor mensen die het moeilijk vinden om zich te concentreren misschien moeilijk te onthouden dat het bij deze gaat om een e-mail. 
 
 Een label toevoegen met 'e-mail'. 
-
-#### Social media buttons aanpassen, want de naam doet het niet op screenreader
-
-De social media buttons werden door de screenreader helemaal niet opgelezen, waardoor ze niet zouden snappen waar het over ging. 
-
-Alts toevoegen?
 
 #### About mobile tekst breder maken 
 
@@ -198,7 +183,7 @@ De buttons op mobiel vielen niet erg op en waren moeilijk aan te klikken voor me
 <summary>uitwerken voor 3e voortgang</summary>
 
 ### Stand van zaken
-Ook deze week verliep eigenlijk alles weer soepel, ik wist wat me te doen stond en waar ik nog aan moest werken om mijn eindproduct te kunnen opleveren. Ik vond de carousel erg lastig om te doen. 
+Ook deze week verliep eigenlijk alles weer soepel, ik wist wat me te doen stond en waar ik nog aan moest werken om mijn eindproduct te kunnen opleveren. Ik vond de carousel erg lastig om te doen. Deze week ben ik begonnen met het verbeteren van de bovenstaande punten die uit de test waren gekomen. 
 
 
 ### Agenda voor meeting
