@@ -680,7 +680,7 @@ blockquote::first-letter {
   }
   
   #index .content {    
-    width: 200%;
+    width: 100%;
     position: absolute;
     color: var(--accent-color);
     top: 50%;
