@@ -26,7 +26,7 @@
   
   
   /* Text */
-  --header-font: Paytone One, sans-serif; 
+  --header-font: Chewy; 
   --main-color:#333;
   --accent-color:#fff;
   --accent-2:#ff7abc;
@@ -90,7 +90,7 @@
 body {
   background: #fff;
   color: #666;
-  font-family: 'Quicksand', sans-serif;
+  font-family: 'arial', sans-serif;
   font-size: 1em;
   line-height: 1.25em;
   margin: 0;
@@ -99,7 +99,7 @@ body {
 }
 
 button {
-  background-color: #ff93c9;
+  background-color: var(--button-background1);
   color: var(--accent-color);
   width: 200px;
   height: 50px;
@@ -129,12 +129,12 @@ a {
 }
 
 h1 {
-  font-size: 3em
+  font-size: 3.5em;
   
 }
 
 h2 {
-  font-size: 2em;
+  font-size: 2.5em;
 }
 
 h1, h2 {
@@ -222,13 +222,17 @@ header {
     color: rgb(255, 80, 153);
   }
 
+  nav a:hover {
+    color: rgb(255, 80, 153);
+    transition: 0.3s ease-in;
+  }
+
+
   button ul {
     transition: none;
     transition-delay: none;
     transform: none;
   }
-
-
 
   button ul.terug {
     transition: none;
@@ -257,7 +261,7 @@ header {
     background-color: white;
     position: sticky;
     top: 0;
-    height: 80px;
+    height: 60px;
     font-weight: 700;
     text-transform: uppercase;
     border-bottom: 2px solid var(--accent-2);
@@ -269,7 +273,7 @@ header {
     display: inline-flex;
     flex-direction: column;
     position: absolute;
-    top: 60px;
+    top: 43px;
     left:10px;
     width: 90%;
     border: 1px solid #ff7abc;
@@ -304,15 +308,14 @@ header {
   }
 
   nav .menu {
-    font-family: "Quicksand";
+    font-family: "arial";
   }
 
   
   nav button {
     background:none;
     border: none;
-    padding: 0;
-    margin: 0;
+    margin-left: -3em;
   }
 
   nav button:hover {
@@ -339,7 +342,7 @@ section {
   display: flex;
   flex-direction: column;
   overflow: hidden;
-  padding: 2em;
+  padding: 3em;
 }
 
 
@@ -382,7 +385,7 @@ section {
 }
 
 .kawaiifycontent h3 {
-  font-family: 'Quicksand', sans-serif;
+  font-family: 'arial', sans-serif;
   font-size: 1.5em;
   color: var(--accent-color);
   font-weight:bolder;
@@ -469,6 +472,19 @@ blockquote::first-letter {
 }
 
 
+/* For desktop */
+
+@media screen and (min-width: 700px) {
+
+  #quotes {
+    display: grid;
+    width: 60%;
+    grid-template-columns: 1fr 1fr;
+    grid-gap:1em;
+    grid-auto-flow: dense;
+    margin-top: 1em;
+  }
+}
 
 
 /**************/
@@ -482,6 +498,7 @@ blockquote::first-letter {
   text-align: center;
   align-items: center;
 }
+
 
 #index section:nth-of-type(3) img {
   max-width: 150%;
@@ -497,11 +514,6 @@ blockquote::first-letter {
   
 }
 
-#index section:nth-of-type(3) span {
-  background-color: var(--third-background);
-  text-align: center;
-  align-items: center;
-}
 
 .feature-icon {
   position: relative;
@@ -510,7 +522,7 @@ blockquote::first-letter {
   width: 3.5em;
   height: 3.5em;
   border-radius: 50%;
-  
+  margin: auto auto;
   animation: bounce;
   animation-timing-function: ease;
   animation-duration: 2s;
@@ -537,6 +549,45 @@ blockquote::first-letter {
 }
 
 
+
+@media screen and (min-width: 850px) {
+
+  #index section:nth-of-type(3) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap:1em;
+    grid-auto-flow: dense;
+    margin-top: 1em;
+    align-items: center;
+  }
+
+  #features {
+    float: right;
+    width: 60%;
+    margin: auto auto;
+  }
+
+  #index section:nth-of-type(3) img {
+    float: left;
+    max-width: 100%;
+  }
+
+  .feature-icon {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    background-color: var(--accent-2);
+    color: #fff;
+    width: 3.5em;
+    height: 3.5em;
+    border-radius: 50%;
+    animation: bounce;
+    animation-timing-function: ease;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+  }
+}
+
 /**************/
 /* Section 4 grid */
 /**************/
@@ -562,6 +613,7 @@ blockquote::first-letter {
   display: flex;
   overflow-x: auto;
   padding: 0 0 4em;
+  margin-bottom: 2em;
 }
 
 .items-slide a {
@@ -589,7 +641,7 @@ blockquote::first-letter {
   }
 
   #index .grid-item {
-    width: 100%;
+    max-width: 100%;
     position: relative;
     display: block;
     overflow: hidden;
@@ -602,6 +654,7 @@ blockquote::first-letter {
   
   #index .grid-item img {    
     max-width: 100%;
+    height: 100%;
     transition: all 0.3s;  
   }
   
@@ -626,8 +679,8 @@ blockquote::first-letter {
     opacity: 1;
   }
   
-  #index .content {
-    width:100%;
+  #index .content {    
+    width: 200%;
     position: absolute;
     color: var(--accent-color);
     top: 50%;
@@ -715,6 +768,10 @@ blockquote::first-letter {
   text-decoration: none;
 }
 
+#index .hoverbutton:hover {
+  background-color: var(--button-background1);
+}
+
 
 
 
@@ -775,7 +832,7 @@ blockquote::first-letter {
 }
 
 
-/* Additional styling */
+/* Styling */
 
 #index .inner {
   width: 300px;
@@ -806,6 +863,8 @@ blockquote::first-letter {
     padding: 10px;
 }
 
+/* Color when it's checked */
+
   #index  #i_1:checked ~ .controls .ctrl_label[for="i_1"],
   #index  #i_2:checked ~ .controls .ctrl_label[for="i_2"],
   #index  #i_3:checked ~ .controls .ctrl_label[for="i_3"],
@@ -818,7 +877,7 @@ blockquote::first-letter {
 
 
 /**************/
-/* Section 6 */
+/* Section 6 How it works */
 /**************/
 
 
@@ -839,11 +898,11 @@ blockquote::first-letter {
   color: var(--accent-2);
 }
 
-#index section:nth-of-type(6) a {
+#index section:nth-of-type(6)  a {
   color: var(--main-color);  
 }
 
-#index section:nth-of-type(6) a:hover {
+#index section:nth-of-type(6)  a:hover {
   color: var(--accent-2);  
   transition: 0.3s ease-in;
 }
@@ -853,12 +912,10 @@ blockquote::first-letter {
   margin: 1em; 
 }
 
-#index section:nth-of-type(6) a:hover {
+#index section:nth-of-type(6)  a:hover {
   transform: rotate(360deg);
   transition: 0.5s ease-in;
 }
-
-
 
 
 
@@ -1125,9 +1182,15 @@ footer .site-info a {
 
 footer .fa {
   color: var(--accent-color);
-  font-size: 1.2em;
+  font-size: 1.5em;
   letter-spacing: 1em;
 }
+
+footer .fa:hover {
+  color: #8669ab;
+  transition: 0.5s ease-in;
+}
+
 
 /* Footer button */
 
@@ -1141,7 +1204,7 @@ footer .started {
 
 footer .started:hover {
   background-color: #abcef8;
-  transition: 0.5s ease-in;
+  transition: 0.3s ease-in;
 }
 
 /**************/
@@ -1185,5 +1248,4 @@ footer button, footer button:hover {
   border: none;
   transition: none;
 }
-
 
