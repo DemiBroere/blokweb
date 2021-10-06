@@ -86,12 +86,12 @@ Er was een ding waar ik een beetje tegenaan liep en dat was het onderstaande. In
 ### Agenda voor meeting
 samen met je groepje opstellen
 
-Teamgenoten communiceren niet. 
+Wij gingen gewoon het rijtje af en bespraken daarin algemene problemen waar wij tegenaan liepen. Van te voren hebben wij niet echt iets afgesproken. Communicatie is er niet echt. 
 
 
 ### Verslag van meeting
  
-De meeting ging eigenlijk prima, ik vond het wel fijn om weer even bezig te zijn. Ik had niet veel vragen, omdat ik nog niet heel ver was. De enige vraag die ik had was of het nodig was om elke keer de code te moeten herhalen, maar dat was (gelukkig) niet het geval. Anders had ik dat nog moeten aanpassen. De studentassistenten hadden mij een goede tip gegeven om aan de slag te gaan met de carousel. 
+De meeting ging eigenlijk prima, ik vond het wel fijn om weer even bezig te zijn met coderen. Ik had niet veel vragen, omdat ik nog niet heel ver was. De enige vraag die ik had was of het nodig was om elke keer de code te moeten herhalen, maar dat was (gelukkig) niet het geval. Anders had ik dat nog moeten aanpassen. Ik vond de communicatie met de studentassistenten erg fijn, ze namen erg goed de tijd om dingen uit te leggen en hielpen ook echt waar nodig was OOK als ze het niet helemaal goed begrepen.
 
 </details>
 
@@ -105,7 +105,7 @@ De meeting ging eigenlijk prima, ik vond het wel fijn om weer even bezig te zijn
 <summary>uitwerken voor 2e voortgang</summary>
 
 ### Stand van zaken
- Ik sta er redelijk goed voor, ik ben goed bezig geweest met de eerste pagina en als deze af is kan ik makkelijker door naar de tweede pagina, omdat dan alles al goed staat. Wat ik erg lastig vind om te doen is de carousel, maar daar heb ik ook nog niet echt naar gekeken. Hier en daar heb ik geprobeerd verschillende delen al wat responsive te maken, omdat ik dat leuk vond om te doen en omdat ik het af en toe vervelend vind om maar met één ding bezig te zijn ( in dit geval de surface plane ). Al met al vind ik dat ik goed op weg ben.
+ Ik sta er redelijk goed voor, ik ben goed bezig geweest met de eerste pagina en als deze af is kan ik makkelijker door naar de tweede pagina, omdat dan alles al goed staat in de CSS. Wat ik erg lastig vind om te doen is de carousel, maar daar heb ik ook nog niet echt naar gekeken. Hier en daar heb ik geprobeerd verschillende delen al wat responsive te maken, omdat ik dat leuk vond om te doen en omdat ik het af en toe vervelend vind om maar met één ding bezig te zijn ( in dit geval de surface plane ). Al met al vind ik dat ik goed op weg ben.
  
 Eindelijk had ik de form goed gekregen. 
  
@@ -114,12 +114,11 @@ Eindelijk had ik de form goed gekregen.
 ### Agenda voor meeting
 samen met je groepje opstellen
 
-Teamgenoten communiceren niet. 
-
+Wij gingen gewoon het rijtje af en bespraken daarin algemene problemen waar wij tegenaan liepen. Van te voren hebben wij echter niet iets afgesproken. Communicatie is er niet echt. 
 
 ### Verslag van meeting
 
- In de meeting was naar voren gekomen dat niet precies alles hetzelfde moest en dat je ook dingen anders mag doen. Dit gaf me wel wat meer rust. Ik moest nog wat focussen op de buttons en de margins rondom de footer. Dit heb ik dan ook aangepast.
+ In de meeting was naar voren gekomen dat niet precies alles hetzelfde moest en dat je ook dingen anders mag doen als deze beter zijn voor de website. Dit gaf me wel wat meer rust. Ik moest nog wat focussen op de buttons en de margins rondom de footer. Dit heb ik dan ook aangepast.
 
 </details>
 
@@ -195,12 +194,8 @@ We bespraken niet echt dingen met het groepje, we gingen vaak gewoon over de alg
 
 
 ### Verslag van meeting
-hier na afloop snel de uitkomsten van de meeting vastleggen
 
-- punt 1
-- punt 2
-- nog een punt
-- ...
+Deze week had ik niet echt iets te bespreken en er kwam dan ook niet echt iets naar voren. Ik vond het erg interessant om te kijken naar hoe de studentassistenten Ilse hielpen met haar buttons. Het was ook wel leerzaam om te zien. 
 
 </details>
 
@@ -214,7 +209,9 @@ hier na afloop snel de uitkomsten van de meeting vastleggen
 <summary>uitwerken voor eindgesprek</summary>
 
 ### Stand van zaken
-hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+ 
+ In het begin van de opdracht vond ik het erg lastig om aan de slag te gaan. Ik wist namelijk niet echt waar ik moest beginnen en hoe ik moest beginnen. De tip om te beginnen met de HTML en vanuit de HTML door te gaan naar de CSS maakte de opdracht een stuk makkelijker. Ik heb mij gefocust op de surface plane, maar ook verschillende delen een beetje responsive gemaakt. Responsiveness is iets wat ik namelijk ook erg interessant vind om te doen en het hield het ook leuk voor mezelf om verschillende dingen te proberen. Het maakte het ook een stukje leerzamer voor mezelf. Tegen het einde liep ik wel een beetje tegen motivatie aan en ik vond het dan ook wel lastig om eraan bezig te gaan. Al met al ben ik trots op het resultaat. 
+ 
 
 ### Screenshot(s)
 
@@ -233,8 +230,8 @@ hier screenshot(s) van je eindresultaat
 
 Nb. Wees specifiek ('css-tricks' als bron is bijv. niet specifiek genoeg).
 
-1. bron 1
-2. bron 2
-3. ...
+1. Resize-animation-stopper: https://css-tricks.com/stop-animations-during-window-resizing/
+2. Carousel/slider: https://codepen.io/KamilDyrek/pen/rPKOaV
+3. Gradient: https://codepen.io/bsander/pen/pPpbNm
 
 </details>
