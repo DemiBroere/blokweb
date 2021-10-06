@@ -210,13 +210,20 @@ Deze week had ik niet echt iets te bespreken en er kwam dan ook niet echt iets n
 
 ### Stand van zaken
  
- In het begin van de opdracht vond ik het erg lastig om aan de slag te gaan. Ik wist namelijk niet echt waar ik moest beginnen en hoe ik moest beginnen. De tip om te beginnen met de HTML en vanuit de HTML door te gaan naar de CSS maakte de opdracht een stuk makkelijker. Ik heb mij gefocust op de surface plane, maar ook verschillende delen een beetje responsive gemaakt. Responsiveness is iets wat ik namelijk ook erg interessant vind om te doen en het hield het ook leuk voor mezelf om verschillende dingen te proberen. Het maakte het ook een stukje leerzamer voor mezelf. Tegen het einde liep ik wel een beetje tegen motivatie aan en ik vond het dan ook wel lastig om eraan bezig te gaan. Al met al ben ik trots op het resultaat. 
+ In het begin van de opdracht vond ik het erg lastig om aan de slag te gaan. Ik wist namelijk niet echt waar ik moest beginnen en hoe ik moest beginnen. De tip om te beginnen met de HTML en vanuit de HTML door te gaan naar de CSS maakte de opdracht een stuk makkelijker. Ik heb mij gefocust op de surface plane, maar ook verschillende delen een beetje responsive gemaakt. Responsiveness is iets wat ik namelijk ook erg interessant vind om te doen en het hield het ook leuk voor mezelf om verschillende dingen te proberen. Het maakte het ook een stukje leerzamer voor mezelf. Tegen het einde liep ik wel een beetje tegen motivatie aan en ik vond het dan ook wel lastig om eraan bezig te gaan. Al met al ben ik trots op het resultaat. Ik heb dingen toegevoegd die het voor mezelf een leukere opdracht maakten, zoals de gradient buttons. Het is een beetje mijn experimentje geworden.
  
 
 ### Screenshot(s)
 
-hier screenshot(s) van je eindresultaat
-
+<img src="images/eind1.png" width="375px" alt="form deel">
+<img src="images/eind2.png" width="375px" alt="form deel">
+ <img src="images/eind3.png" width="375px" alt="form deel">
+ <img src="images/eind4.png" width="375px" alt="form deel">
+ <img src="images/eind5.png" width="375px" alt="form deel">
+ <img src="images/eind6.png" width="375px" alt="form deel">
+ <img src="images/eind7.png" width="375px" alt="form deel">
+ <img src="images/eind8.png" width="375px" alt="form deel">
+ <img src="images/eind9.png" width="375px" alt="form deel">
 </details>
 
 
