@@ -136,22 +136,16 @@ Lijst met je bevindingen die in de test naar voren kwamen:
 
 1.	States toevoegen ( focus, hover, disabled, active, visited ) 
 2.	Hamburger menu verduidelijken, krijg button
-4.	Geef body een ID en maak van sections weer :first-of
-5.	Buttons vergroten voor mobiel 
-6.	Linkjes en tekst vergroten van de footer
-7.	About mobile tekst breder maken 
-9.	Label boven input
+3.	Buttons vergroten voor mobiel 
+4.	Linkjes en tekst vergroten van de footer
+5.	About mobile tekst breder maken 
+6.	Label boven input
 
 
 #### States toevoegen, met name focus.
 De focus valt niet op. 
  
-De kleuren van de focus aanpassen zodat de aandacht van de gebruiker wordt getrokken.
-
-#### Mobiel menu
-De menubutton op mobiel wordt weergegeven als button door de screenreader. 
-
-Een alt toevoegen aan de button. 
+De kleuren van de focus aanpassen zodat de aandacht van de gebruiker wordt getrokken als ze door de website gaan met tab.
 
 #### Footer links
 De linkjes van de footer waren zo klein dat ze moeilijk te lezen waren. 
@@ -161,7 +155,7 @@ De tekst iets groter maken, zodat het niet zo wegvalt en gebruikers het alsnog k
 #### Label boven input email
 Het was voor de screenreader niet duidelijk, ook is het voor mensen die het moeilijk vinden om zich te concentreren misschien moeilijk te onthouden dat het bij deze gaat om een e-mail. 
 
-Een label toevoegen met 'e-mail'. 
+Ik heb een label toegevoegd met de naam "email", zodat ze weten dat het gaat om de email zelfs als ze afgeleid zijn.
 
 #### About mobile tekst breder maken 
 
@@ -170,7 +164,8 @@ Op de mobiele pagina was de about tekst heel erg smal.
 De width aanpassen, zodat het de hele breedte in beslag neemt. 
 
 #### Buttons vergroten voor mobiel 
-De buttons op mobiel vielen niet erg op en waren moeilijk aan te klikken voor mensen met een beperking zoals parkinson, waarbij je hele arm trilt en je weinig controle hebt. 
+
+De buttons op mobiel vielen niet erg op en waren moeilijk aan te klikken voor mensen met een beperking zoals parkinson, waarbij je hele arm trilt en je weinig controle hebt. Daarom heb ik de buttons iets groter gemaakt om het hopelijk makkelijker te maken.
 
 </details>
 
@@ -184,7 +179,7 @@ De buttons op mobiel vielen niet erg op en waren moeilijk aan te klikken voor me
 <summary>uitwerken voor 3e voortgang</summary>
 
 ### Stand van zaken
-Ook deze week verliep eigenlijk alles weer soepel, ik wist wat me te doen stond en waar ik nog aan moest werken om mijn eindproduct te kunnen opleveren. Ik vond de carousel erg lastig om te doen. Deze week ben ik begonnen met het verbeteren van de bovenstaande punten die uit de test waren gekomen. 
+Ook deze week verliep eigenlijk alles weer soepel, ik wist wat me te doen stond en waar ik nog aan moest werken om mijn eindproduct te kunnen opleveren. Ik vond de carousel erg lastig om te maken. Deze week ben ik begonnen met het verbeteren van de bovenstaande punten die uit de test waren gekomen. 
 
 
 ### Agenda voor meeting
@@ -195,7 +190,7 @@ We bespraken niet echt dingen met het groepje, we gingen vaak gewoon over de alg
 
 ### Verslag van meeting
 
-Deze week had ik niet echt iets te bespreken en er kwam dan ook niet echt iets naar voren. Ik vond het erg interessant om te kijken naar hoe de studentassistenten Ilse hielpen met haar buttons. Het was ook wel leerzaam om te zien. 
+Deze week had ik niet echt iets te bespreken en er kwam dan ook niet echt iets naar voren. Ik vond het erg interessant om te kijken naar hoe de studentassistenten Ilse hielpen met haar buttons. Het was ook wel leerzaam om te zien, ondanks dat ik er niet heel veel van begreep. Ze wilde namelijk dat de buttons er uit kwamen te zien als de buttons van dopper.nl.
 
 </details>
 
@@ -210,7 +205,7 @@ Deze week had ik niet echt iets te bespreken en er kwam dan ook niet echt iets n
 
 ### Stand van zaken
  
- In het begin van de opdracht vond ik het erg lastig om aan de slag te gaan. Ik wist namelijk niet echt waar ik moest beginnen en hoe ik moest beginnen. De tip om te beginnen met de HTML en vanuit de HTML door te gaan naar de CSS maakte de opdracht een stuk makkelijker. Ik heb mij gefocust op de surface plane, maar ook verschillende delen een beetje responsive gemaakt. Responsiveness is iets wat ik namelijk ook erg interessant vind om te doen en het hield het ook leuk voor mezelf om verschillende dingen te proberen. Het maakte het ook een stukje leerzamer voor mezelf. Tegen het einde liep ik wel een beetje tegen motivatie aan en ik vond het dan ook wel lastig om eraan bezig te gaan. Al met al ben ik trots op het resultaat. Ik heb dingen toegevoegd die het voor mezelf een leukere opdracht maakten, zoals de gradient buttons. Het is een beetje mijn experimentje geworden.
+ In het begin van de opdracht vond ik het erg lastig om aan de slag te gaan. Ik wist namelijk niet echt waar ik moest beginnen en hoe ik moest beginnen. De tip om te beginnen met de HTML en vanuit de HTML door te gaan naar de CSS maakte de opdracht een stuk makkelijker. Ik heb mij gefocust op de surface plane, maar ook verschillende delen een beetje responsive gemaakt. Responsiveness is iets wat ik namelijk ook erg interessant vind om te doen en het hield het ook leuk voor mezelf om verschillende dingen te proberen. Het maakte het ook een stukje leerzamer voor mezelf. Tegen het einde liep ik wel een beetje tegen motivatie aan en ik vond het dan ook wel lastig om eraan bezig te gaan. Waar ik soms tegenaan liep was het feit dat je op een gegeven moment de fouten niet meer ziet, omdat je er zo lang naar hebt gekeken. Al met al ben ik trots op het resultaat. Ik heb dingen toegevoegd die het voor mezelf een leukere opdracht maakten, zoals de gradient buttons. Het is een beetje mijn experimentje geworden. Ik vind dit dan ook erg leuk om te doen.
  
 
 ### Screenshot(s)
