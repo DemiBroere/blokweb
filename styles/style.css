@@ -115,9 +115,13 @@ button {
 }
 
 button:hover {
-  background-color: var(--button-hover);
-  border-color: var(--button-hover);
-  box-shadow: var(--shadow);
+  background: linear-gradient(to right, rgb(255, 80, 153), rgb(255, 172, 186), #abcef8, #8669ab);
+  background-size: 200% 200%;
+  animation: rainbow 2s ease-in-out infinite;
+  background-clip: border-box ;
+  -webkit-background-clip: border-box;
+  transition: .5s ease-in-out;
+
 }
 
 p {
@@ -200,7 +204,7 @@ header {
 
 /* For desktop */
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 700px) {
 
   nav {
     background: white;
@@ -254,7 +258,7 @@ header {
 
 /* For mobile */
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 700px) {
 
 
   nav  {
@@ -373,7 +377,17 @@ section {
   text-transform: uppercase;
   color: var(--accent-color);
   font-weight:bolder;
+  margin-top: 1em;
   text-shadow: var(--shadow);
+}
+
+.kawaiifycontent h1:hover {
+  background: linear-gradient(to right, rgb(255, 80, 153), rgb(255, 172, 186), #abcef8, #8669ab);
+  background-size: 200% 200%;
+  animation: rainbow 2s ease-in-out infinite;
+  background-clip: text ;
+  -webkit-background-clip:text;
+  transition: color .2s ease-in-out;
 }
 
 .kawaiifycontent h2 {
@@ -541,13 +555,6 @@ blockquote::first-letter {
   left: 0;
   margin: auto;
 }
-
-@keyframes bounce {
-  0%   { transform: translateY(0); }
-  50%  { transform: translateY(-10px); }
-  100% { transform: translateY(0); }
-}
-
 
 
 @media screen and (min-width: 850px) {
@@ -762,16 +769,13 @@ blockquote::first-letter {
   border-radius: 0.5em;
 }
 
-#index .hoverbutton a {
-  background-color: transparent;
-  color: var(--accent-color);
-  text-decoration: none;
-}
-
 #index .hoverbutton:hover {
-  background-color: var(--button-background1);
+  background: linear-gradient(to left,rgb(255, 80, 153), rgb(253, 163, 196));
+  background-size: 200% 200%;
+  animation: rainbow 2s ease-in-out infinite;
+  background-clip: border-box;
+  transition: color .2s ease-in-out;
 }
-
 
 
 
@@ -1180,6 +1184,12 @@ footer .site-info a {
   color: var(--accent-color);
 }
 
+footer a:hover {
+  color: rgb(65, 135, 204);
+  transition: 0.5s ease-in;
+}
+
+
 footer .fa {
   color: var(--accent-color);
   font-size: 1.5em;
@@ -1187,7 +1197,7 @@ footer .fa {
 }
 
 footer .fa:hover {
-  color: #8669ab;
+  color:  rgb(65, 135, 204);
   transition: 0.5s ease-in;
 }
 
@@ -1203,12 +1213,38 @@ footer .started {
 }
 
 footer .started:hover {
-  background-color: #abcef8;
-  transition: 0.3s ease-in;
+  background: linear-gradient(to left,rgb(80, 168, 255), rgb(163, 244, 253));
+  background-size: 200% 200%;
+  animation: rainbow 2s ease-in-out infinite;
+  background-clip: border-box;
+  transition: color .2s ease-in-out;
+}
+
+/* desktop footer */ 
+
+@media screen and (min-width: 600px) {
+
+  footer {
+    padding: 5em;
+  }
+  
+  footer .ftr_grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap:5em;
+    grid-auto-flow: dense;
+    margin-top: 1em;
+  } 
+  
+  footer .copyright {
+    padding-top: 5em;
+    text-align: left;
+    bottom: 0;
+  }  
 }
 
 /**************/
-/* Forms */
+/* FORMS */
 /**************/
 
 footer form {
@@ -1229,7 +1265,7 @@ footer input#email {
   border-radius: 0.25em;
 }
 
-button.news-submit {
+footer button.news-submit {
   display: inline-block;  
   width: 50px;
   height: 2.5em;
@@ -1249,3 +1285,28 @@ footer button, footer button:hover {
   transition: none;
 }
 
+
+
+
+
+/**************/
+/* KEYFRAMES */
+/**************/
+
+
+/* Rainbow keyframes */
+
+
+@keyframes rainbow { 
+  0%{background-position: left}
+  50%{background-position: right}
+  100%{background-position: left}
+}
+
+/* bounce keyframes */
+
+@keyframes bounce {
+  0%   { transform: translateY(0); }
+  50%  { transform: translateY(-10px); }
+  100% { transform: translateY(0); }
+}
